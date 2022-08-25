@@ -1,0 +1,152 @@
+
+>>> 'spam eggs'  # single quotes
+'spam eggs'
+>>> 'doesn\'t'  # use \' to escape the single quote..
+"doesn't"
+>>> 'doesn\'t'  # use \' to escape the single quote..
+"doesn't"
+>>>
+KeyboardInterrupt
+>>> '"Yes," they said.'
+'"Yes," they said.'
+>>>  "\"Yes,\" they said."
+  File "<stdin>", line 1
+    "\"Yes,\" they said."
+IndentationError: unexpected indent
+>>>  "\"Yes,\" they said."
+  File "<stdin>", line 1
+    "\"Yes,\" they said."
+IndentationError: unexpected indent
+>>>  "\"Yes,\" they said."
+  File "<stdin>", line 1
+    "\"Yes,\" they said."
+IndentationError: unexpected indent
+>>> "\"Yes,\" they said."
+'"Yes," they said.'
+>>> '"Isn\'t," they said.'
+'"Isn\'t," they said.'
+>>> '"Isn\'t," they said.'
+'"Isn\'t," they said.'
+>>> '"Isn\'t," they said.'
+'"Isn\'t," they said.'
+>>>  print('"Isn\'t," they said.')
+  File "<stdin>", line 1
+    print('"Isn\'t," they said.')
+IndentationError: unexpected indent
+>>> print('"Isn\'t,"they said.')
+"Isn't,"they said.
+>>>  s = 'First line.\nSecond line.'  # \n means newline
+  File "<stdin>", line 1
+  >>> s  #without print(), \n is included in the output
+'First line.\nSecond line.'
+>>> print(s)  # with print(), \n produces a new Line
+First line.
+Second line.
+>>>  print('C:\some\name')  # here \n means newline!
+  File "<stdin>", line 1
+    print('C:\some\name')  # here \n means newline!
+IndentationError: unexpected indent
+>>> print ('C:\some\name')  # here \n means newLine!
+C:\some
+ame
+>>> print(r'c:\some\name')  # note the r before the quote
+c:\some\name
+>>> print ('C:\some\name')  # here \n means newLine!
+C:\some
+ame
+>>> print(r'c:\some\name')  # note the r before the quote
+c:\some\name
+>>> print("""\
+... Usage: thingy [OPTIONS]
+...      -h                        Display this usage message
+...      -H hostname               Hostname to connect to
+... """)
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+
+>>> # 3 times 'un', followed by 'ium'
+>>> 3 * 'un' + 'ium'
+'unununium'
+>>> 'Py' 'thon'
+'Python'
+>>> text = ('put several strings within parenthess '
+...         'to have them joined together.')
+>>> text
+'put several strings within parenthess to have them joined together.'
+>>> prefix = 'py'
+>>> prefix 'thon'  # can't concatenate a variable and a string literal
+  File "<stdin>", line 1
+    prefix 'thon'  # can't concatenate a variable and a string literal
+           ^^^^^^
+SyntaxError: invalid syntax
+>>> ('un' * 3) 'ium'
+  File "<stdin>", line 1
+    ('un' * 3) 'ium'
+               ^^^^^
+SyntaxError: invalid syntax
+>>> prefix + 'thon'
+'python'
+>>> word = 'Python'
+>>> word[0]  # character in position 0
+'P'
+>>> word[5]  # character in position 5
+'n'
+>>> word[-1]  # last character
+'n'
+>>> word[-2]  # second-last character
+'o'
+>>> word[-6]
+'P'
+>>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
+'Py'
+>>> word[2:5]  # characters from position 2 (included) to 5 (exluded)
+'tho'
+>>> word[:2]  # character from the beginning to position 2 2(exluded)
+'Py'
+>>> word[-2:]  # character from the secound-last (included) to the end
+'on'
+>>> word[:2] + word[2:]
+'Python'
+>>>  word[:4] + word[4:]
+  File "<stdin>", line 1
+    word[:4] + word[4:]
+IndentationError: unexpected indent
+>>> word[:4] + word[4:]
+'Python'
+>>>  word[42]  # the word only has 6 characters
+  File "<stdin>", line 1
+    word[42]  # the word only has 6 characters
+IndentationError: unexpected indent
+>>>  word[4:42]
+  File "<stdin>", line 1
+    word[4:42]
+IndentationError: unexpected indent
+>>> word[4:42]
+'on'
+>>> word42:]
+  File "<stdin>", line 1
+    word42:]
+           ^
+SyntaxError: unmatched ']'
+>>> word[42:]
+''
+>>> word[0] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> word[2:] = 'py'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'py'
+'Pypy'
+>>>  s = 'supercalifragilisticexpialidocious'
+  File "<stdin>", line 1
+    s = 'supercalifragilisticexpialidocious'
+IndentationError: unexpected indent
+>>> s = 'supercalifragilisticexpialidocious'
+>>> len(s)
+34

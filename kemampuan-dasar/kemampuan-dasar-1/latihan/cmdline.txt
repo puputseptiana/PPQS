@@ -1,0 +1,2645 @@
+C:\Users\USER>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+
+
+
+
+
+C:\Users\USER>whoami
+desktop-89bk25r\user
+
+
+
+
+
+
+C:\Users\USER>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi 3:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::7c58:296d:d43b:f187%21
+   IPv4 Address. . . . . . . . . . . : 172.16.3.146
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.16.3.254
+
+
+
+
+
+
+
+
+C:\Users\USER>hostname
+DESKTOP-89BK25R
+
+
+
+
+
+C:\Users\USER>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+40-B0-34-0B-0D-D9   Media disconnected
+3C-A0-67-CD-CB-4B   \Device\Tcpip_{B55BB924-F873-4171-846C-CA24728AB968}
+
+
+
+
+
+
+C:\Users\USER>systeminfo
+
+Host Name:                 DESKTOP-89BK25R
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19044 N/A Build 19044
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          USER
+Registered Organization:
+Product ID:                00330-80000-00000-AA531
+Original Install Date:     5/22/2021, 12:31:54 AM
+System Boot Time:          8/4/2022, 2:28:30 AM
+System Manufacturer:       Hewlett-Packard
+System Model:              HP Notebook
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 76 Stepping 4 GenuineIntel ~1601 Mhz
+BIOS Version:              Insyde F.22, 11/4/2016
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-us;English (United States)
+Input Locale:              ja;Japanese
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     3,935 MB
+Available Physical Memory: 896 MB
+Virtual Memory: Max Size:  4,639 MB
+Virtual Memory: Available: 1,283 MB
+Virtual Memory: In Use:    3,356 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-89BK25R
+Hotfix(s):                 13 Hotfix(s) Installed.
+                           [01]: KB5013887
+                           [02]: KB4562830
+                           [03]: KB4580325
+                           [04]: KB5003791
+                           [05]: KB5015807
+                           [06]: KB5006753
+                           [07]: KB5007273
+                           [08]: KB5011352
+                           [09]: KB5011651
+                           [10]: KB5014032
+                           [11]: KB5014035
+                           [12]: KB5014671
+                           [13]: KB5005699
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Realtek PCIe FE Family Controller
+                                 Connection Name: Ethernet 3
+                                 Status:          Media disconnected
+                           [02]: Realtek RTL8723BE 802.11 bgn Wi-Fi Adapter
+                                 Connection Name: Wi-Fi 3
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.22.177
+                                 IP address(es)
+                                 [01]: 192.168.22.38
+                                 [02]: fe80::7c58:296d:d43b:f187
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: No
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+
+
+
+
+
+
+
+C:\Users\USER>tree
+Folder PATH listing
+Volume serial number is DA97-0CA9
+C:.
+├───.idlerc
+├───.oracle_jre_usage
+├───3D Objects
+├───aaa
+├───Contacts
+├───Desktop
+├───Documents
+│   ├───AdobeStockPhotos
+│   │   ├───Downloaded Comps
+│   │   ├───Previous Searches
+│   │   └───Purchased Images
+│   ├───Custom Office Templates
+│   ├───Sound recordings
+│   └───Version Cue
+├───Downloads
+│   └───(3) WhatsApp_files
+├───Favorites
+│   └───Links
+├───Links
+├───Music
+├───OneDrive
+├───Pictures
+│   ├───Camera Roll
+│   └───Saved Pictures
+├───Saved Games
+├───Searches
+└───Videos
+    ├───#1
+    └───Captures
+
+
+
+
+
+
+
+
+C:\Users\USER>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0         32 K
+Registry                        92 Services                   0     50,124 K
+smss.exe                       368 Services                   0        508 K
+csrss.exe                      608 Services                   0      2,692 K
+wininit.exe                    808 Services                   0      3,540 K
+services.exe                   944 Services                   0      7,744 K
+lsass.exe                      960 Services                   0     17,348 K
+svchost.exe                    548 Services                   0     26,556 K
+WUDFHost.exe                   500 Services                   0      6,292 K
+fontdrvhost.exe                660 Services                   0        356 K
+svchost.exe                    572 Services                   0     16,176 K
+svchost.exe                   1040 Services                   0      5,632 K
+svchost.exe                   1208 Services                   0      6,672 K
+svchost.exe                   1224 Services                   0     10,180 K
+svchost.exe                   1284 Services                   0      5,192 K
+svchost.exe                   1308 Services                   0      4,984 K
+svchost.exe                   1376 Services                   0      7,864 K
+svchost.exe                   1388 Services                   0      2,816 K
+svchost.exe                   1608 Services                   0     15,400 K
+svchost.exe                   1624 Services                   0      7,372 K
+svchost.exe                   1692 Services                   0     12,456 K
+svchost.exe                   1732 Services                   0      4,888 K
+svchost.exe                   1748 Services                   0      1,872 K
+Memory Compression            1780 Services                   0     42,396 K
+svchost.exe                   1908 Services                   0      2,856 K
+svchost.exe                   1948 Services                   0      5,548 K
+igfxCUIService.exe            1968 Services                   0      5,456 K
+svchost.exe                   2012 Services                   0      3,732 K
+svchost.exe                   2020 Services                   0      4,380 K
+svchost.exe                   1576 Services                   0      5,196 K
+svchost.exe                   2064 Services                   0      7,148 K
+svchost.exe                   2076 Services                   0     15,732 K
+svchost.exe                   2088 Services                   0      4,780 K
+svchost.exe                   2220 Services                   0      9,612 K
+svchost.exe                   2272 Services                   0      6,708 K
+svchost.exe                   2364 Services                   0     15,440 K
+svchost.exe                   2416 Services                   0      3,492 K
+svchost.exe                   2476 Services                   0      9,000 K
+RtkAudioService64.exe         2504 Services                   0      4,932 K
+svchost.exe                   2712 Services                   0      6,072 K
+svchost.exe                   2724 Services                   0      3,488 K
+svchost.exe                   2736 Services                   0      5,676 K
+svchost.exe                   2880 Services                   0      4,140 K
+svchost.exe                   2972 Services                   0     14,116 K
+svchost.exe                   3056 Services                   0      7,872 K
+spoolsv.exe                   3100 Services                   0      6,852 K
+svchost.exe                   3132 Services                   0     12,496 K
+svchost.exe                   3192 Services                   0      3,136 K
+svchost.exe                   3260 Services                   0      4,240 K
+svchost.exe                   3268 Services                   0      3,324 K
+svchost.exe                   3320 Services                   0     10,068 K
+svchost.exe                   3328 Services                   0     36,200 K
+svchost.exe                   3344 Services                   0     39,268 K
+mDNSResponder.exe             3368 Services                   0      3,812 K
+RtkBtManServ.exe              3384 Services                   0      3,436 K
+svchost.exe                   3420 Services                   0     16,060 K
+esif_uf.exe                   3432 Services                   0      1,628 K
+svchost.exe                   3444 Services                   0      2,516 K
+svchost.exe                   3452 Services                   0      3,884 K
+svchost.exe                   3460 Services                   0      1,808 K
+svchost.exe                   3468 Services                   0      6,664 K
+svchost.exe                   3816 Services                   0      4,308 K
+svchost.exe                   3832 Services                   0      2,976 K
+svchost.exe                   3864 Services                   0      1,612 K
+svchost.exe                   3900 Services                   0      5,948 K
+svchost.exe                   4236 Services                   0      2,372 K
+svchost.exe                   4496 Services                   0      5,700 K
+dasHost.exe                   4704 Services                   0     10,956 K
+svchost.exe                   4772 Services                   0      4,772 K
+svchost.exe                   1328 Services                   0      5,028 K
+SearchIndexer.exe             4052 Services                   0     30,184 K
+svchost.exe                   5748 Services                   0     12,784 K
+svchost.exe                   5796 Services                   0      3,848 K
+svchost.exe                   6068 Services                   0     12,464 K
+PresentationFontCache.exe     4444 Services                   0      3,584 K
+svchost.exe                   1760 Services                   0      9,172 K
+svchost.exe                   3680 Services                   0     19,168 K
+svchost.exe                   6772 Services                   0     18,152 K
+svchost.exe                   4756 Services                   0     17,728 K
+MoUsoCoreWorker.exe           2356 Services                   0     49,400 K
+svchost.exe                   4520 Services                   0      6,212 K
+SgrmBroker.exe                5180 Services                   0      4,968 K
+svchost.exe                   4728 Services                   0      3,540 K
+svchost.exe                   7596 Services                   0      4,956 K
+SecurityHealthService.exe     7856 Services                   0     12,020 K
+svchost.exe                   8024 Services                   0      5,784 K
+svchost.exe                   2956 Services                   0      5,856 K
+svchost.exe                   9032 Services                   0      4,700 K
+svchost.exe                   3156 Services                   0      6,360 K
+svchost.exe                   8504 Services                   0      5,012 K
+svchost.exe                   5152 Services                   0      2,644 K
+svchost.exe                   9324 Services                   0      3,720 K
+MsMpEng.exe                   8188 Services                   0    195,128 K
+NisSrv.exe                    9192 Services                   0      5,416 K
+svchost.exe                   8896 Services                   0      3,424 K
+MpCopyAccelerator.exe         9264 Services                   0      2,068 K
+svchost.exe                   3696 Services                   0      4,304 K
+svchost.exe                   7080 Services                   0      2,676 K
+svchost.exe                   8044 Services                   0      1,644 K
+svchost.exe                   7428 Services                   0      4,228 K
+svchost.exe                   9848 Services                   0      3,064 K
+csrss.exe                     8032 Console                    7      6,720 K
+winlogon.exe                  6180 Console                    7     10,680 K
+fontdrvhost.exe               1540 Console                    7     13,024 K
+dwm.exe                       1440 Console                    7     78,988 K
+ctfmon.exe                   12812 Console                    7     22,312 K
+RAVBg64.exe                   4452 Console                    7     15,600 K
+svchost.exe                   6672 Console                    7     31,036 K
+sihost.exe                   13688 Console                    7     26,704 K
+svchost.exe                   8052 Console                    7     37,100 K
+taskhostw.exe                 3012 Console                    7     19,684 K
+igfxEM.exe                    8848 Console                    7     13,932 K
+igfxHK.exe                    8472 Console                    7     10,812 K
+igfxTray.exe                  6192 Console                    7     12,384 K
+explorer.exe                  3496 Console                    7    369,304 K
+svchost.exe                   6364 Console                    7     25,116 K
+StartMenuExperienceHost.e    14256 Console                    7     90,516 K
+TextInputHost.exe            10060 Console                    7     44,268 K
+RuntimeBroker.exe            12892 Console                    7     26,204 K
+RuntimeBroker.exe             3804 Console                    7     44,108 K
+YourPhone.exe                14212 Console                    7     42,340 K
+chrome.exe                   11644 Console                    7    183,424 K
+chrome.exe                    7064 Console                    7      7,744 K
+SettingSyncHost.exe           6408 Console                    7     12,276 K
+chrome.exe                    7696 Console                    7    130,324 K
+chrome.exe                   11432 Console                    7     40,904 K
+chrome.exe                   10108 Console                    7     18,440 K
+SecurityHealthSystray.exe    11752 Console                    7      9,724 K
+chrome.exe                   12016 Console                    7     45,200 K
+RtkNGUI64.exe                14384 Console                    7     19,328 K
+msedge.exe                    2744 Console                    7     89,984 K
+msedge.exe                    7296 Console                    7      7,816 K
+Cortana.exe                   4384 Console                    7     55,068 K
+SearchApp.exe                10704 Console                    7     95,800 K
+msedge.exe                   13604 Console                    7     33,812 K
+msedge.exe                    5864 Console                    7     31,920 K
+msedge.exe                   11248 Console                    7     19,548 K
+svchost.exe                   9468 Console                    7     20,176 K
+RuntimeBroker.exe             7316 Console                    7     18,088 K
+svchost.exe                   4552 Console                    7     22,108 K
+ShellExperienceHost.exe      13560 Console                    7     71,644 K
+RuntimeBroker.exe            13876 Console                    7     29,808 K
+RuntimeBroker.exe             6420 Console                    7     15,900 K
+UserOOBEBroker.exe           14068 Console                    7      9,652 K
+dllhost.exe                  14976 Console                    7     14,232 K
+RuntimeBroker.exe            10588 Console                    7     24,820 K
+chrome.exe                    4460 Console                    7     98,036 K
+chrome.exe                    5988 Console                    7     83,352 K
+chrome.exe                   10324 Console                    7     86,860 K
+chrome.exe                    6488 Console                    7     75,940 K
+chrome.exe                    7812 Console                    7     67,500 K
+chrome.exe                    5064 Console                    7     19,592 K
+chrome.exe                    9776 Console                    7     66,220 K
+svchost.exe                  15008 Services                   0     21,740 K
+MusNotifyIcon.exe             2540 Console                    7      3,996 K
+taskhostw.exe                 5888 Console                    7     19,744 K
+chrome.exe                    8992 Console                    7     42,668 K
+chrome.exe                    6264 Console                    7     94,952 K
+OneDrive.exe                 12236 Console                    7    128,044 K
+svchost.exe                   7504 Services                   0     24,320 K
+powershell.exe                2936 Console                    7     73,920 K
+conhost.exe                   7000 Console                    7     16,808 K
+chrome.exe                    4724 Console                    7     91,936 K
+chrome.exe                   11272 Console                    7     40,404 K
+notepad.exe                  11732 Console                    7     18,344 K
+svchost.exe                  13752 Services                   0     13,320 K
+svchost.exe                   8916 Services                   0      7,492 K
+svchost.exe                  12520 Services                   0      6,000 K
+svchost.exe                    236 Services                   0     10,432 K
+svchost.exe                   5252 Services                   0      7,584 K
+svchost.exe                  14628 Services                   0     16,656 K
+TrustedInstaller.exe          9868 Services                   0      7,616 K
+TiWorker.exe                 10512 Services                   0     10,952 K
+smartscreen.exe              10812 Console                    7     23,740 K
+cmd.exe                       2128 Console                    7      4,624 K
+conhost.exe                   6440 Console                    7     22,076 K
+SearchProtocolHost.exe       10532 Console                    7      8,404 K
+SearchFilterHost.exe         12208 Services                   0      7,512 K
+tasklist.exe                  6172 Console                    7      9,124 K
+WmiPrvSE.exe                  7208 Services                   0      9,452 K
+
+
+
+
+
+
+
+
+
+C:\Users\USER>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+
+
+
+
+
+
+
+
+
+
+ Directory of C:\Users\USER
+
+08/18/2022  08:12 PM    <DIR>          .
+08/18/2022  08:12 PM    <DIR>          ..
+08/17/2022  10:55 PM               724 .bash_history
+08/17/2022  08:34 PM                64 .gitconfig
+08/15/2022  08:13 PM    <DIR>          .idlerc
+12/14/2018  07:49 PM    <DIR>          .oracle_jre_usage
+05/22/2021  01:33 AM    <DIR>          3D Objects
+08/18/2022  08:12 PM    <DIR>          aaa
+05/22/2021  01:33 AM    <DIR>          Contacts
+10/05/2021  08:19 AM    <DIR>          Desktop
+08/15/2022  08:34 PM    <DIR>          Documents
+08/17/2022  07:00 PM    <DIR>          Downloads
+05/22/2021  01:33 AM    <DIR>          Favorites
+05/22/2021  01:33 AM    <DIR>          Links
+05/22/2021  01:33 AM    <DIR>          Music
+08/20/2021  04:52 AM    <DIR>          OneDrive
+05/22/2021  01:33 AM    <DIR>          Pictures
+08/18/2022  07:38 PM                 0 ping
+05/22/2021  01:33 AM    <DIR>          Saved Games
+05/22/2021  01:33 AM    <DIR>          Searches
+10/05/2021  11:16 PM    <DIR>          Videos
+               3 File(s)            788 bytes
+              18 Dir(s)  62,500,331,520 bytes fre
+
+
+
+
+
+
+
+
+C:\Users\USER>assoc
+.386=vxdfile
+.3g2=WMP11.AssocFile.3G2
+.3gp=WMP11.AssocFile.3GP
+.3gp2=WMP11.AssocFile.3G2
+.3gpp=WMP11.AssocFile.3GP
+.7z=WinRAR
+.8ba=Photoshop.PlugIn
+.8bc=Photoshop.PlugIn
+.8be=Photoshop.PlugIn
+.8bf=Photoshop.PlugIn
+.8bi=Photoshop.PlugIn
+.8bp=Photoshop.PlugIn
+.8bs=Photoshop.PlugIn
+.8bx=Photoshop.PlugIn
+.8by=Photoshop.PlugIn
+.8li=Photoshop.PlugIn
+.a52=KMPlayer.a52
+.AAC=WMP11.AssocFile.ADTS
+.abr=Photoshop.BrushesFile
+.acb=Photoshop.ColorBooks
+.accda=Access.ACCDAExtension.15
+.accdb=Access.Application.15
+.accdc=Access.ACCDCFile.15
+.accde=Access.ACCDEFile.15
+.accdr=Access.ACCDRFile.15
+.accdt=Access.ACCDTFile.15
+.accdu=Access.WizardUserDataFile.15
+.accdw=Access.WebApplicationReference.15
+.accft=Access.ACCFTFile.15
+.accountpicture-ms=accountpicturefile
+.ace=WinRAR
+.acf=Photoshop.CustomFilterKernel
+.acl=ACLFile
+.aco=Photoshop.SwatchesFile
+.acrobatsecuritysettings=AcroExch.acrobatsecuritysettings
+.act=Photoshop.ColorTableFile
+.acv=Photoshop.CurvesFile
+.ade=Access.ADEFile.15
+.adn=Access.BlankProjectTemplate.15
+.ado=Photoshop.DuotoneSettingsFile
+.adobebridge=Adobe.adobebridge
+.adp=Access.Project.15
+.adpp=DeviceCentral.adpp
+.ADT=WMP11.AssocFile.ADTS
+.ADTS=WMP11.AssocFile.ADTS
+.advs=DeviceCentral.advs
+.ahs=Photoshop.HalftoneScreens
+.ahu=Photoshop.HueSatFile
+.aif=NeroShowTime.Files7.aif
+.aifc=KMPlayer.aifc
+.aiff=NeroShowTime.Files7.aiff
+.air=AIR.InstallerPackage
+.alac=KMPlayer.alac
+.alv=Photoshop.LevelsFile
+.amp=Photoshop.ArbitraryMapFile
+.ams=Photoshop.MonitorSetupFile
+.amv=KMPlayer.amv
+.ani=anifile
+.ape=KMPlayer.ape
+.api=AcroExch.Plugin
+.appcontent-ms=ApplicationContent
+.application=Application.Manifest
+.appref-ms=Application.Reference
+.arj=WinRAR
+.asa=aspfile
+.ase=Photoshop.ExchangeableSwatchFile.10
+.asf=WMP11.AssocFile.ASF
+.asl=Photoshop.Styles
+.asp=aspfile
+.ass=KMPlayer.ass
+.ast=Photoshop.SepTablesFile
+.asv=Photoshop.ASVColAdjFile
+.asx=KMPlayer.asx
+.atf=Photoshop.TransferFunctionsFile
+.atn=Photoshop.ActionsFile
+.au=KMPlayer.au
+.ava=Photoshop.VariationsFile
+.avi=WMP11.AssocFile.AVI
+.avs=NeroShowTime.Files7.avs
+.aw=AWFile
+.axt=Photoshop.AXTAdjColFile
+.bat=batfile
+.blg=Diagnostic.Perfmon.Document
+.blw=Photoshop.BWPresets
+.bmp=Photoshop.BMPFile.10
+.bsf=NeroShowTime.Files7.bsf
+.bup=NeroShowTime.Files7.bup
+.bz=WinRAR
+.bz2=WinRAR
+.cab=WinRAR
+.camp=campfile
+.cat=CATFile
+.cda=NeroShowTime.Files7.cda
+.cdc=NeroCoverDesigner.Files7.cdc
+.cdmp=cdmpfile
+.cdx=aspfile
+.cdxml=Microsoft.PowerShellCmdletDefinitionXML.1
+.cer=CERFile
+.cha=Photoshop.CHAFile
+.chk=chkfile
+.chm=chm.file
+.cin=Photoshop.CINFile.10
+.cmd=cmdfile
+.collection=Bridge.Collection
+.com=comfile
+.compositefont=Windows.CompositeFont
+.cpl=cplfile
+.cr2=Photoshop.CameraRawFileCanon2.10
+.crl=CRLFile
+.crt=CERFile
+.crtx=CRTXFile
+.crw=Photoshop.CameraRawFileCanon.10
+.csf=Adobe.ColorSettings
+.csh=Photoshop.CustomShapes
+.css=CSSfile
+.csv=Excel.CSV
+.ctcs=CamSuite.Content
+.cue=NeroExpress.Files7.cue
+.cur=curfile
+.cut=NeroPhotoSnapViewer.Files7.cut
+.dat=NeroShowTime.Files7.dat
+.db=dbfile
+.dcr=Photoshop.CameraRawFileKodak.10
+.dctx=IMEDictionaryCompiler
+.dctxc=IMEDictionaryCompiler
+.dds=NeroPhotoSnapViewer.Files7.dds
+.der=CERFile
+.desklink=CLSID\{9E56BE61-C50F-11CF-9A2C-00A0C90A90CE}
+.deskthemepack=desktopthemepackfile
+.det=Outlook.File.det.15
+.diagcab=Diagnostic.Cabinet
+.diagcfg=Diagnostic.Config
+.diagpkg=Diagnostic.Document
+.dib=Paint.Picture
+.dll=dllfile
+.dng=Photoshop.CameraRawFileDigital.10
+.doc=Word.Document.8
+.dochtml=wordhtmlfile
+.docm=Word.DocumentMacroEnabled.12
+.docmhtml=wordmhtmlfile
+.docx=Word.Document.12
+.docxml=wordxmlfile
+.dot=Word.Template.8
+.dothtml=wordhtmltemplate
+.dotm=Word.TemplateMacroEnabled.12
+.dotx=Word.Template.12
+.dqy=dqyfile
+.drv=drvfile
+.dsn=MSDASQL
+.dts=KMPlayer.dts
+.dv=NeroShowTime.Files7.dv
+.dvr-ms=NeroShowTime.Files7.dvr-ms
+.elm=ELMFile
+.emf=emffile
+.eml=Outlook.File.eml.15
+.erf=Photoshop.CameraRawFileEpson.10
+.evo=KMPlayer.evo
+.evt=evtfile
+.evtx=evtxfile
+.exe=exefile
+.exr=Photoshop.OpenEXRFile.10
+.f4v=KMPlayer.f4v
+.fdf=AcroExch.FDFDoc
+.fdm=Outlook.File.fdm.15
+.ffo=Photoshop.FileInfo
+.flac=WMP11.AssocFile.FLAC
+.flc=KMPlayer.flc
+.fli=KMPlayer.fli
+.flv=KMPlayer.flv
+.fon=fonfile
+.gcsx=GCSXFile
+.gif=giffile
+.gitattributes=txtfile
+.gitignore=txtfile
+.gitmodules=txtfile
+.glox=GLOXFile
+.gmmp=gmmpfile
+.gqsx=GQSXFile
+.gra=MSGraph.Chart.8
+.grd=Photoshop.Gradients
+.grp=MSProgramGroup
+.gvi=KMPlayer.gvi
+.gz=WinRAR
+.hdmov=KMPlayer.hdmov
+.hdr=Photoshop.PortableBitMapFile.10
+.hlp=hlpfile
+.hol=Outlook.File.hol.15
+.hta=htafile
+.htm=htmlfile
+.html=htmlfile
+.hxa=MSHelp.hxa.2.5
+.hxc=MSHelp.hxc.2.5
+.hxd=MSHelp.hxd.2.5
+.hxe=MSHelp.hxe.2.5
+.hxf=MSHelp.hxf.2.5
+.hxh=MSHelp.hxh.2.5
+.hxi=MSHelp.hxi.2.5
+.hxk=MSHelp.hxk.2.5
+.hxq=MSHelp.hxq.2.5
+.hxr=MSHelp.hxr.2.5
+.hxs=MSHelp.hxs.2.5
+.hxt=MSHelp.hxt.2.5
+.hxv=MSHelp.hxv.2.5
+.hxw=MSHelp.hxa.2.5
+.icc=icmfile
+.icl=IconLibraryFile
+.icm=icmfile
+.ico=icofile
+.ics=Outlook.File.ics.15
+.idx=KMPlayer.idx
+.iff=NeroPhotoSnapViewer.Files7.iff
+.ifo=NeroShowTime.Files7.ifo
+.igp=Intel.GraphicsControlPanel.igp.1
+.imesx=imesxfile
+.img=Windows.IsoFile
+.inf=inffile
+.infopathxml=InfoPath.Document.4
+.ini=inifile
+.iqy=iqyfile
+.iros=Photoshop.IRSettings
+.irs=Photoshop.IRSettings
+.iso=NeroExpress.Files7.iso
+.jar=jarfile
+.jfif=pjpegfile
+.jif=NeroPhotoSnapViewer.Files7.jif
+.jng=NeroPhotoSnapViewer.Files7.jng
+.jnlp=JNLPFile
+.Job=JobObject
+.jod=Microsoft.Jet.OLEDB.4.0
+.jpe=jpegfile
+.jpeg=jpegfile
+.jpg=jpegfile
+.js=JSFile
+.JSE=JSEFile
+.jsx=JSXFile
+.jsxbin=JSXBINFile
+.jxr=wdpfile
+.k3g=KMPlayer.k3g
+.koa=NeroPhotoSnapViewer.Files7.koa
+.kpl=KMPlayer.kpl
+.kys=Photoshop.KYSFile.10
+.label=Label
+.laccdb=Access.LockFile.15
+.lbm=NeroPhotoSnapViewer.Files7.lbm
+.ldb=Access.LockFile.15
+.lex=LEXFile
+.lha=WinRAR
+.library-ms=LibraryFolder
+.ljp=NeroPhotoSnapViewer.Files7.ljp
+.lnk=lnkfile
+.log=txtfile
+.lzh=WinRAR
+.m1a=KMPlayer.m1a
+.m1v=WMP11.AssocFile.MPEG
+.m2a=KMPlayer.m2a
+.m2p=NeroShowTime.Files7.m2p
+.M2T=WMP11.AssocFile.M2TS
+.M2TS=WMP11.AssocFile.M2TS
+.M2V=WMP11.AssocFile.MPEG
+.m3u=WMP11.AssocFile.m3u
+.m4a=WMP11.AssocFile.M4A
+.m4b=KMPlayer.m4b
+.m4p=KMPlayer.m4p
+.m4v=WMP11.AssocFile.MP4
+.mad=Access.Shortcut.Module.1
+.maf=Access.Shortcut.Form.1
+.mag=Access.Shortcut.Diagram.1
+.mam=Access.Shortcut.Macro.1
+.mapimail=CLSID\{9E56BE60-C50F-11CF-9A2C-00A0C90A90CE}
+.maq=Access.Shortcut.Query.1
+.mar=Access.Shortcut.Report.1
+.mas=Access.Shortcut.StoredProcedure.1
+.mat=Access.Shortcut.Table.1
+.mau=Access.Shortcut.Function.1
+.mav=Access.Shortcut.View.1
+.maw=Access.Shortcut.DataAccessPage.1
+.mda=Access.Extension.15
+.mdb=Access.MDBFile
+.mdbhtml=accesshtmlfile
+.mde=Access.MDEFile.15
+.mdn=Access.BlankDatabaseTemplate.15
+.mdt=Access.WizardDataFile.15
+.mdw=Access.Workgroup.15
+.mht=mhtmlfile
+.mhtml=mhtmlfile
+.mid=NeroShowTime.Files7.mid
+.midi=NeroShowTime.Files7.midi
+.mk3d=KMPlayer.mk3d
+.mka=WMP11.AssocFile.MKA
+.mkv=WMP11.AssocFile.MKV
+.mlc=LpkSetup.1
+.mmv=NeroShowTime.Files7.mmv
+.mng=NeroPhotoSnapViewer.Files7.mng
+.mnu=Photoshop.MenuCustomizationFile.10
+.MOD=WMP11.AssocFile.MPEG
+.mos=Photoshop.CameraRawFileLeaf.10
+.mov=WMP11.AssocFile.MOV
+.mp+=KMPlayer.mp+
+.mp1=KMPlayer.mp1
+.mp2=NeroShowTime.Files7.mp2
+.mp2v=WMP11.AssocFile.MPEG
+.mp3=WMP11.AssocFile.MP3
+.mp4=WMP11.AssocFile.MP4
+.mp4v=WMP11.AssocFile.MP4
+.mpa=WMP11.AssocFile.MPEG
+.mpc=KMPlayer.mpc
+.mpcpl=mplayerc.mpcpl
+.mpe=WMP11.AssocFile.MPEG
+.mpeg=WMP11.AssocFile.MPEG
+.mpg=WMP11.AssocFile.MPEG
+.mpp=KMPlayer.mpp
+.mpv2=WMP11.AssocFile.MPEG
+.mqv=KMPlayer.mqv
+.mrw=Photoshop.CameraRawFileMinolta.10
+.ms-one-stub=Groove.SPFS.OneNoteStub
+.ms-windows-store-license=WindowsStore.License
+.msc=MSCFile
+.msg=Outlook.File.msg.15
+.msi=Msi.Package
+.msp=Msi.Patch
+.msrcincident=RemoteAssistance.1
+.msstyles=msstylesfile
+.msu=Microsoft.System.Update.1
+.MTS=WMP11.AssocFile.M2TS
+.mtv=KMPlayer.mtv
+.mydocs=CLSID\{ECF03A32-103D-11d2-854D-006008059367}
+.nab=NeroExpress.Files7.nab
+.ncd=NeroCoverDesigner.Files7.ncd
+.nct=NeroCoverDesigner.Files7.nct
+.ncw=NeroCoverDesigner.Files7.ncw
+.nef=Photoshop.CameraRawFileNikon.10
+.nero_scout_video=NeroScoutVideo
+.nero_search_email_result=NeroSearchEmailResult
+.nfd_audio=NFDAudio
+.nfd_data=NFDData
+.nfo=MSInfoFile
+.nhf=NeroExpress.Files7.nhf
+.nhv=NeroExpress.Files7.nhv
+.nk2=Outlook.File.nk2.15
+.nmd=NeroExpress.Files7.nmd
+.nr3=NeroExpress.Files7.nr3
+.nr4=NeroExpress.Files7.nr4
+.nra=NeroExpress.Files7.nra
+.nrb=NeroExpress.Files7.nrb
+.nrc=NeroExpress.Files7.nrc
+.nrd=NeroExpress.Files7.nrd
+.nre=NeroExpress.Files7.nre
+.nrg=NeroExpress.Files7.nrg
+.nrh=NeroExpress.Files7.nrh
+.nri=NeroExpress.Files7.nri
+.nrj=NeroExpress.Files7.nrj
+.nrm=NeroExpress.Files7.nrm
+.nrs=NeroExpress.Files7.nrs
+.nru=NeroExpress.Files7.nru
+.nrv=NeroExpress.Files7.nrv
+.nsa=KMPlayer.nsa
+.nsb_search_more=NSBSearch
+.nsd=NeroExpress.Files7.nsd
+.nsv=KMPlayer.nsv
+.nvc=NeroVision.Document
+.ocx=ocxfile
+.odc=odcfile
+.odccubefile=odccubefile
+.odcdatabasefile=odcdatabasefile
+.odcnewfile=odcnewfile
+.odctablecollectionfile=odctablecollectionfile
+.odctablefile=odctablefile
+.odp=PowerPoint.OpenDocumentPresentation.12
+.ods=Excel.OpenDocumentSpreadsheet.12
+.odt=Word.OpenDocumentText.12
+.ofr=KMPlayer.ofr
+.ofs=KMPlayer.ofs
+.oft=Outlook.File.oft.15
+.oga=KMPlayer.oga
+.ogg=NeroShowTime.Files7.ogg
+.ogm=NeroShowTime.Files7.ogm
+.ogv=KMPlayer.ogv
+.ols=OfficeListShortcut
+.one=OneNote.Section.1
+.onepkg=OneNote.Package
+.onetoc=OneNote.TableOfContents
+.onetoc2=OneNote.TableOfContents.12
+.opc=OPCFile
+.oqy=oqyfile
+.orf=Photoshop.CameraRawFileOlympus.10
+.osdx=opensearchdescription
+.ost=Outlook.File.ost.15
+.otf=otffile
+.otm=Outlook.File.otm.15
+.p10=P10File
+.p12=PFXFile
+.p7b=SPCFile
+.p7c=certificate_wab_auto_file
+.p7m=P7MFile
+.p7r=P7RFile
+.p7s=P7SFile
+.pab=Outlook.File.pab.15
+.partial=IE.AssocFile.PARTIAL
+.pat=Photoshop.Patterns
+.pbk=pbkfile
+.pbm=NeroPhotoSnapViewer.Files7.pbm
+.pcb=PCBFile
+.pcd=NeroPhotoSnapViewer.Files7.pcd
+.pcx=NeroPhotoSnapViewer.Files7.pcx
+.pdd=Photoshop.PDDFile.10
+.pdf=AcroExch.Document
+.pdfxml=AcroExch.pdfxml
+.pdp=Photoshop.PDPFile.10
+.pdx=PDXFileType
+.pef=Photoshop.CameraRawFilePentax.10
+.perfmoncfg=Diagnostic.Perfmon.Config
+.pfm=pfmfile
+.pfx=PFXFile
+.pif=piffile
+.pko=PKOFile
+.pls=NeroShowTime.Files7.pls
+.pnf=pnffile
+.png=pngfile
+.pot=PowerPoint.Template.8
+.pothtml=powerpointhtmltemplate
+.potm=PowerPoint.TemplateMacroEnabled.12
+.potx=PowerPoint.Template.12
+.ppa=PowerPoint.Addin.8
+.ppam=PowerPoint.Addin.12
+.ppkg=Microsoft.ProvTool.Provisioning.1
+.ppm=NeroPhotoSnapViewer.Files7.ppm
+.pps=PowerPoint.SlideShow.8
+.ppsm=PowerPoint.SlideShowMacroEnabled.12
+.ppsx=PowerPoint.SlideShow.12
+.ppt=PowerPoint.Show.8
+.ppthtml=powerpointhtmlfile
+.pptm=PowerPoint.ShowMacroEnabled.12
+.pptmhtml=powerpointmhtmlfile
+.pptx=PowerPoint.Show.12
+.pptxml=powerpointxmlfile
+.prf=prffile
+.printerExport=brmFile
+.ps1=Microsoft.PowerShellScript.1
+.ps1xml=Microsoft.PowerShellXMLData.1
+.psb=Photoshop.PSBFile.10
+.psc1=Microsoft.PowerShellConsole.1
+.psd=NeroPhotoSnapViewer.Files7.psd
+.psd1=Microsoft.PowerShellData.1
+.psf=Photoshop.ProofSetup
+.psm1=Microsoft.PowerShellModule.1
+.psp=Photoshop.PreferencesFile
+.pssc=Microsoft.PowerShellSessionConfiguration.1
+.pst=Outlook.File.pst.15
+.pub=Publisher.Document.15
+.pubhtml=publisherhtmlfile
+.pubmhtml=publishermhtmlfile
+.pwz=PowerPoint.Wizard.8
+.pxr=Photoshop.PXRFile.10
+.py=Python.File
+.pyc=Python.CompiledFile
+.pyd=Python.Extension
+.pyo=Python.CompiledFile
+.pyw=Python.NoConFile
+.pyz=Python.ArchiveFile
+.pyzw=Python.NoConArchiveFile
+.qds=SavedDsQuery
+.qt=KMPlayer.qt
+.r00=WinRAR
+.r01=WinRAR
+.r02=WinRAR
+.r03=WinRAR
+.r04=WinRAR
+.r05=WinRAR
+.r06=WinRAR
+.r07=WinRAR
+.r08=WinRAR
+.r09=WinRAR
+.r10=WinRAR
+.r11=WinRAR
+.r12=WinRAR
+.r13=WinRAR
+.r14=WinRAR
+.r15=WinRAR
+.r16=WinRAR
+.r17=WinRAR
+.r18=WinRAR
+.r19=WinRAR
+.r20=WinRAR
+.r21=WinRAR
+.r22=WinRAR
+.r23=WinRAR
+.r24=WinRAR
+.r25=WinRAR
+.r26=WinRAR
+.r27=WinRAR
+.r28=WinRAR
+.r29=WinRAR
+.ra=KMPlayer.ra
+.raf=Photoshop.CameraRawFileFujifilm.10
+.ram=KMPlayer.ram
+.rar=WinRAR
+.rat=ratfile
+.RDP=RDP.File
+.reg=regfile
+.resmoncfg=Diagnostic.Resmon.Config
+.rev=WinRAR.REV
+.rle=rlefile
+.rll=dllfile
+.rm=KMPlayer.rm
+.rmi=NeroShowTime.Files7.rmi
+.rmj=KMPlayer.rmj
+.rmm=KMPlayer.rmm
+.rms=KMPlayer.rms
+.rmvb=KMPlayer.rmvb
+.rqy=rqyfile
+.rt=KMPlayer.rt
+.rtf=Word.RTF.8
+.rv=KMPlayer.rv
+.scf=SHCmdFile
+.scp=txtfile
+.scr=scrfile
+.sct=Photoshop.SCTFile.10
+.search-ms=SearchFolder
+.searchConnector-ms=SearchConnectorFolder
+.secstore=AcroExch.SecStore
+.settingcontent-ms=SettingContent
+.sfcache=RDBFileProperties.1
+.sh=sh_auto_file
+.shc=Photoshop.ShapeCurves
+.shh=Photoshop.SHHFile.10
+.shtml=shtmlfile
+.skm=KMPlayer.skm
+.sldm=PowerPoint.SlideMacroEnabled.12
+.sldx=PowerPoint.Slide.12
+.slk=Excel.SLK
+.smi=KMPlayer.smi
+.snd=KMPlayer.snd
+.spc=SPCFile
+.spx=KMPlayer.spx
+.srf=Photoshop.CameraRawFileSony.10
+.srt=KMPlayer.srt
+.ssa=KMPlayer.ssa
+.sst=CertificateStoreFile
+.sta=Photoshop.STAFile.10
+.sub=KMPlayer.sub
+.svg=svgfile
+.symlink=.symlink
+.sys=sysfile
+.tar=WinRAR
+.taz=WinRAR
+.tbz=WinRAR
+.tbz2=WinRAR
+.tga=NeroPhotoSnapViewer.Files7.tga
+.tgz=WinRAR
+.theme=themefile
+.themepack=themepackfile
+.thmx=OfficeTheme.12
+.tif=Photoshop.TIFFFile.10
+.tiff=Photoshop.TIFFFile.10
+.tp=KMPlayer.tp
+.tpl=Photoshop.ToolPresets
+.tpr=KMPlayer.tpr
+.trp=NeroShowTime.Files7.trp
+.TS=WMP11.AssocFile.TTS
+.tta=KMPlayer.tta
+.ttc=ttcfile
+.ttf=ttffile
+.TTS=WMP11.AssocFile.TTS
+.txt=txtfile
+.txz=WinRAR
+.UDL=MSDASC
+.URL=InternetShortcut
+.uu=WinRAR
+.uue=WinRAR
+.uxdc=UXDCFILE
+.VBE=VBEFile
+.vbs=VBSFile
+.vcf=Outlook.File.vcf.15
+.vcs=Outlook.File.vcs.15
+.vdw=VisioViewer.Viewer
+.vdx=VisioViewer.Viewer
+.vhd=Windows.VhdFile
+.vhdpmem=Windows.VhdPmemFile
+.vhdx=Windows.VhdFile
+.vob=NeroShowTime.Files7.vob
+.vp6=KMPlayer.vp6
+.vsd=VisioViewer.Viewer
+.vsdm=VisioViewer.Viewer
+.vsdx=VisioViewer.Viewer
+.vss=VisioViewer.Viewer
+.vssm=VisioViewer.Viewer
+.vssx=VisioViewer.Viewer
+.vst=VisioViewer.Viewer
+.vstm=VisioViewer.Viewer
+.vsto=bootstrap.vsto.1
+.vstx=VisioViewer.Viewer
+.vsx=VisioViewer.Viewer
+.vtx=VisioViewer.Viewer
+.vxd=vxdfile
+.wab=wab_auto_file
+.wav=WMP11.AssocFile.WAV
+.wave=NeroShowTime.Files7.wave
+.wax=KMPlayer.wax
+.wbcat=wbcatfile
+.wbk=Word.Backup.8
+.wbm=NeroPhotoSnapViewer.Files7.wbm
+.wbmp=NeroPhotoSnapViewer.Files7.wbmp
+.wcx=wcxfile
+.wdp=wdpfile
+.webpnp=webpnpFile
+.website=Microsoft.Website
+.wiz=Word.Wizard.8
+.wizhtml=accessthmltemplate
+.wll=Word.Addin.8
+.wm=WMP11.AssocFile.ASF
+.wma=WMP11.AssocFile.WMA
+.WMD=WMP11.AssocFile.WMD
+.wmdb=WMP.WMDBFile
+.wmf=NeroPhotoSnapViewer.Files7.wmf
+.wmp=KMPlayer.wmp
+.WMS=WMP11.AssocFile.WMS
+.wmv=WMP11.AssocFile.WMV
+.wmx=KMPlayer.wmx
+.wmz=WMP11.AssocFile.WMZ
+.wpg=NeroPhotoSnapViewer.Files7.wpg
+.wpl=WMP11.AssocFile.WPL
+.wsc=scriptletfile
+.WSF=WSFFile
+.WSH=WSHFile
+.wtx=txtfile
+.wv=KMPlayer.wv
+.wvx=WMP11.AssocFile.WVX
+.x3f=Photoshop.CameraRawFileFoveon.10
+.xaml=Windows.XamlDocument
+.xbap=Windows.Xbap
+.xbm=NeroPhotoSnapViewer.Files7.xbm
+.xdp=AcroExch.XDPDoc
+.xevgenxml=XEV.GenericApp
+.xfdf=AcroExch.XFDFDoc
+.xht=xhtmlfile
+.xhtml=xhtmlfile
+.xla=Excel.Addin
+.xlam=Excel.AddInMacroEnabled
+.xld=Excel.Dialog
+.xlk=Excel.Backup
+.xll=Excel.XLL
+.xlm=Excel.Macrosheet
+.xls=Excel.Sheet.8
+.xlsb=Excel.SheetBinaryMacroEnabled.12
+.xlshtml=Excelhtmlfile
+.xlsm=Excel.SheetMacroEnabled.12
+.xlsmhtml=excelmhtmlfile
+.xlsx=Excel.Sheet.12
+.xlt=Excel.Template.8
+.xlthtml=Excelhtmltemplate
+.xltm=Excel.TemplateMacroEnabled
+.xltx=Excel.Template
+.xlw=Excel.Workspace
+.xlxml=Excelxmlss
+.xml=xmlfile
+.xrm-ms=MSSppLicenseFile
+.xsf=InfoPath.SolutionManifest.4
+.xsl=xslfile
+.xsn=InfoPath.Solution.4
+.xtp=XTPFile
+.xtp2=XTP2File
+.xxe=WinRAR
+.xz=WinRAR
+.z=WinRAR
+.ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
+.zip=WinRAR.ZIP
+
+
+
+
+
+
+
+
+C:\Users\USER>cipher
+
+ Listing C:\Users\USER\
+ New files added to this directory will not be encrypted.
+
+U .bash_history
+U .gitconfig
+U .idlerc
+U .oracle_jre_usage
+U 3D Objects
+U aaa
+U Contacts
+U Desktop
+U Documents
+U Downloads
+U Favorites
+U Links
+U Music
+U OneDrive
+U Pictures
+U ping
+U Saved Games
+U Searches
+U Videos
+
+
+
+
+
+
+
+
+
+C:\Users\USER>driverquery
+
+Module Name  Display Name           Driver Type   Link Date
+============ ====================== ============= ======================
+1394ohci     1394 OHCI Compliant Ho Kernel
+3ware        3ware                  Kernel        5/18/2015 3:28:03 PM
+ACPI         Microsoft ACPI Driver  Kernel
+AcpiDev      ACPI Devices driver    Kernel
+acpiex       Microsoft ACPIEx Drive Kernel
+acpipagr     ACPI Processor Aggrega Kernel
+AcpiPmi      ACPI Power Meter Drive Kernel
+acpitime     ACPI Wake Alarm Driver Kernel
+Acx01000     Acx01000               Kernel
+ADP80XX      ADP80XX                Kernel        4/9/2015 1:49:48 PM
+AFD          Ancillary Function Dri Kernel
+afunix       afunix                 Kernel
+ahcache      Application Compatibil Kernel
+amdgpio2     AMD GPIO Client Driver Kernel        2/7/2019 1:32:20 AM
+amdi2c       AMD I2C Controller Ser Kernel        3/19/2019 9:57:33 PM
+AmdK8        AMD K8 Processor Drive Kernel
+AmdPPM       AMD Processor Driver   Kernel
+amdsata      amdsata                Kernel        5/14/2015 5:14:52 AM
+amdsbs       amdsbs                 Kernel        12/11/2012 1:21:44 PM
+amdxata      amdxata                Kernel        4/30/2015 5:55:35 PM
+AppID        AppID Driver           Kernel
+applockerflt Smartlocker Filter Dri Kernel
+AppvStrm     AppvStrm               File System
+AppvVemgr    AppvVemgr              File System
+AppvVfs      AppvVfs                File System
+arcsas       Adaptec SAS/SATA-II RA Kernel        4/9/2015 12:12:07 PM
+AsyncMac     RAS Asynchronous Media Kernel
+atapi        IDE Channel            Kernel
+b06bdrv      QLogic Network Adapter Kernel        5/25/2016 12:03:08 AM
+bam          Background Activity Mo Kernel
+BasicDisplay BasicDisplay           Kernel
+BasicRender  BasicRender            Kernel
+bcmfn2       bcmfn2 Service         Kernel        10/31/2016 7:09:15 PM
+Beep         Beep                   Kernel
+bindflt      Windows Bind Filter Dr File System
+bowser       Browser                File System
+BthA2dp      Microsoft Bluetooth A2 Kernel
+BthEnum      Bluetooth Enumerator S Kernel
+BthHFEnum    Microsoft Bluetooth Ha Kernel
+BthLEEnum    Bluetooth Low Energy D Kernel
+BthMini      Bluetooth Radio Driver Kernel
+BTHMODEM     Bluetooth Modem Commun Kernel
+BTHPORT      Bluetooth Port Driver  Kernel
+BTHUSB       Bluetooth Radio USB Dr Kernel
+bttflt       Microsoft Hyper-V VHDP Kernel
+buttonconver Service for Portable D Kernel
+CAD          Charge Arbitration Dri Kernel
+cdfs         CD/DVD File System Rea File System
+cdrom        CD-ROM Driver          Kernel
+cht4iscsi    cht4iscsi              Kernel        2/5/2019 5:51:31 AM
+cht4vbd      Chelsio Virtual Bus Dr Kernel        2/5/2019 5:47:51 AM
+CimFS        CimFS                  File System
+circlass     Consumer IR Devices    Kernel
+CldFlt       Windows Cloud Files Fi File System
+CLFS         Common Log (CLFS)      Kernel
+CmBatt       Microsoft ACPI Control Kernel
+CNG          CNG                    Kernel
+cnghwassist  CNG Hardware Assist al Kernel
+CompositeBus Composite Bus Enumerat Kernel
+condrv       Console Driver         Kernel
+CSC          Offline Files Driver   Kernel
+dam          Desktop Activity Moder Kernel
+Dfsc         DFS Namespace Client D File System
+disk         Disk Driver            Kernel
+dmvsc        dmvsc                  Kernel
+dptf_acpi    dptf_acpi              Kernel        12/12/2018 6:51:23 PM
+dptf_cpu     dptf_cpu               Kernel        12/12/2018 6:51:24 PM
+drmkaud      Microsoft Trusted Audi Kernel
+DXGKrnl      LDDM Graphics Subsyste Kernel
+ebdrv        QLogic 10 Gigabit Ethe Kernel        5/25/2016 12:01:05 AM
+EhStorClass  Enhanced Storage Filte Kernel
+EhStorTcgDrv Microsoft driver for s Kernel
+ErrDev       Microsoft Hardware Err Kernel
+esif_lf      esif_lf                Kernel        12/12/2018 6:51:40 PM
+exfat        exFAT File System Driv File System
+fastfat      FAT12/16/32 File Syste File System
+fdc          Floppy Disk Controller Kernel
+FileCrypt    FileCrypt              File System
+FileInfo     File Information FS Mi File System
+Filetrace    Filetrace              File System
+flpydisk     Floppy Disk Driver     Kernel
+FltMgr       FltMgr                 File System
+FsDepends    File System Dependency File System
+fvevol       BitLocker Drive Encryp Kernel
+gencounter   Microsoft Hyper-V Gene Kernel
+genericusbfn Generic USB Function C Kernel
+GPIOClx0101  Microsoft GPIO Class E Kernel
+GpuEnergyDrv GPU Energy Driver      Kernel
+HdAudAddServ Microsoft 1.1 UAA Func Kernel
+HDAudBus     Microsoft UAA Bus Driv Kernel
+HidBatt      HID UPS Battery Driver Kernel
+HidBth       Microsoft Bluetooth HI Kernel
+hidi2c       Microsoft I2C HID Mini Kernel
+hidinterrupt Common Driver for HID  Kernel
+HidIr        Microsoft Infrared HID Kernel
+hidspi       Microsoft SPI HID Mini Kernel
+HidUsb       Microsoft HID Class Dr Kernel
+HpSAMD       HpSAMD                 Kernel        3/26/2013 2:36:54 PM
+HTTP         HTTP Service           Kernel
+hvcrash      hvcrash                Kernel
+hvservice    Hypervisor/Virtual Mac Kernel
+HwNClx0101   Microsoft Hardware Not Kernel
+hwpolicy     Hardware Policy Driver Kernel
+hyperkbd     hyperkbd               Kernel
+HyperVideo   HyperVideo             Kernel
+i8042prt     i8042 Keyboard and PS/ Kernel
+iagpio       Intel Serial IO GPIO C Kernel        7/23/2018 2:04:46 AM
+iai2c        Intel(R) Serial IO I2C Kernel        7/23/2018 2:04:39 AM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/19/2018 12:53:24 AM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/17/2018 2:25:15 AM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/17/2018 12:07:03 AM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        5/15/2018 10:46:36 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        4/19/2018 12:52:58 AM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        4/17/2018 2:24:40 AM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        7/14/2019 10:12:12 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        5/15/2018 10:46:02 PM
+iaLPSSi_GPIO Intel(R) Serial IO GPI Kernel        2/2/2015 1:00:09 AM
+iaLPSSi_I2C  Intel(R) Serial IO I2C Kernel        2/24/2015 7:52:07 AM
+iaStorAVC    Intel Chipset SATA RAI Kernel        9/5/2019 5:07:32 AM
+iaStorV      Intel RAID Controller  Kernel        4/11/2011 11:48:16 AM
+ibbus        Mellanox InfiniBand Bu Kernel        6/19/2019 6:20:09 AM
+igfxLP       igfxLP                 Kernel        10/29/2018 1:47:01 PM
+IndirectKmd  Indirect Displays Kern Kernel
+IntcAzAudAdd Service for Realtek HD Kernel        4/30/2018 4:09:11 AM
+IntcDAud     Intel(R) Display Audio Kernel        4/26/2018 4:32:29 AM
+intelide     intelide               Kernel
+intelpep     Intel(R) Power Engine  Kernel
+intelpmax    Intel(R) Dynamic Devic Kernel
+intelppm     Intel Processor Driver Kernel
+iorate       Disk I/O Rate Filter D Kernel
+IpFilterDriv IP Traffic Filter Driv Kernel
+IPMIDRV      IPMIDRV                Kernel
+IPNAT        IP Network Address Tra Kernel
+IPT          IPT                    Kernel
+isapnp       isapnp                 Kernel
+iScsiPrt     iScsiPort Driver       Kernel
+ItSas35i     ItSas35i               Kernel        6/20/2019 12:35:34 AM
+kbdclass     Keyboard Class Driver  Kernel
+kbdhid       Keyboard HID Driver    Kernel
+kbldfltr     kbldfltr               Kernel
+kdnic        Microsoft Kernel Debug Kernel
+KSecDD       KSecDD                 Kernel
+KSecPkg      KSecPkg                Kernel
+ksthunk      Kernel Streaming Thunk Kernel
+lltdio       Link-Layer Topology Di Kernel
+LSI_SAS      LSI_SAS                Kernel        3/25/2015 12:36:48 PM
+LSI_SAS2i    LSI_SAS2i              Kernel        8/2/2017 6:29:59 AM
+LSI_SAS3i    LSI_SAS3i              Kernel        4/3/2019 11:54:35 PM
+LSI_SSS      LSI_SSS                Kernel        3/15/2013 4:39:38 PM
+luafv        UAC File Virtualizatio File System
+mausbhost    MA-USB Host Controller Kernel
+mausbip      MA-USB IP Filter Drive Kernel
+MbbCx        MBB Network Adapter Cl Kernel
+megasas      megasas                Kernel        3/4/2015 6:36:29 PM
+megasas2i    megasas2i              Kernel        4/4/2019 6:28:53 AM
+megasas35i   megasas35i             Kernel        6/20/2019 3:01:12 AM
+megasr       megasr                 Kernel        6/3/2013 3:02:39 PM
+Microsoft_Bl Microsoft Bluetooth Av Kernel
+mlx4_bus     Mellanox ConnectX Bus  Kernel        6/19/2019 6:21:08 AM
+MMCSS        Multimedia Class Sched Kernel
+Modem        Modem                  Kernel
+monitor      Microsoft Monitor Clas Kernel
+mouclass     Mouse Class Driver     Kernel
+mouhid       Mouse HID Driver       Kernel
+mountmgr     Mount Point Manager    Kernel
+mpsdrv       Windows Defender Firew Kernel
+MRxDAV       WebDav Client Redirect File System
+mrxsmb       SMB MiniRedirector Wra File System
+mrxsmb20     SMB 2.0 MiniRedirector File System
+MsBridge     Microsoft MAC Bridge   Kernel
+Msfs         Msfs                   File System
+msgpiowin32  Common Driver for Butt Kernel
+mshidkmdf    Pass-through HID to KM Kernel
+mshidumdf    Pass-through HID to UM Kernel
+msisadrv     msisadrv               Kernel
+MSKSSRV      Microsoft Streaming Se Kernel
+MSPCLOCK     Microsoft Streaming Cl Kernel
+MSPQM        Microsoft Streaming Qu Kernel
+MsQuic       MsQuic                 Kernel
+MsRPC        MsRPC                  Kernel
+MsSecFlt     Microsoft Security Eve Kernel
+mssmbios     Microsoft System Manag Kernel
+MSTEE        Microsoft Streaming Te Kernel
+MTConfig     Microsoft Input Config Kernel
+Mup          Mup                    File System
+mvumis       mvumis                 Kernel        5/23/2014 1:39:04 PM
+NativeWifiP  NativeWiFi Filter      Kernel
+ndfltr       NetworkDirect Service  Kernel        6/19/2019 6:18:42 AM
+NDIS         NDIS System Driver     Kernel
+NdisCap      Microsoft NDIS Capture Kernel
+NdisImPlatfo Microsoft Network Adap Kernel
+NdisTapi     Remote Access NDIS TAP Kernel
+Ndisuio      NDIS Usermode I/O Prot Kernel
+NdisVirtualB Microsoft Virtual Netw Kernel
+NdisWan      Remote Access NDIS WAN Kernel
+ndiswanlegac Remote Access LEGACY N Kernel
+NDKPing      NDKPing Driver         Kernel
+ndproxy      NDIS Proxy Driver      Kernel
+Ndu          Windows Network Data U Kernel
+NetAdapterCx Network Adapter Wdf Cl Kernel
+NetBIOS      NetBIOS Interface      File System
+NetBT        NetBT                  Kernel
+netvsc       netvsc                 Kernel
+Npfs         Npfs                   File System
+npsvctrig    Named pipe service tri Kernel
+nsiproxy     NSI Proxy Service Driv Kernel
+Ntfs         Ntfs                   File System
+Null         Null                   Kernel
+nvdimm       Microsoft NVDIMM devic Kernel
+nvraid       nvraid                 Kernel        4/21/2014 11:28:42 AM
+nvstor       nvstor                 Kernel        4/21/2014 11:34:03 AM
+Parport      Parallel port driver   Kernel
+partmgr      Partition driver       Kernel
+pci          PCI Bus Driver         Kernel
+pciide       pciide                 Kernel
+pcmcia       pcmcia                 Kernel
+pcw          Performance Counters f Kernel
+pdc          pdc                    Kernel
+PEAUTH       PEAUTH                 Kernel
+percsas2i    percsas2i              Kernel        3/14/2016 5:50:11 PM
+percsas3i    percsas3i              Kernel        6/1/2018 2:47:02 PM
+PktMon       Packet Monitor Driver  Kernel
+pmem         Microsoft persistent m Kernel
+PNPMEM       Microsoft Memory Modul Kernel
+portcfg      portcfg                Kernel
+PptpMiniport WAN Miniport (PPTP)    Kernel
+Processor    Processor Driver       Kernel
+Psched       QoS Packet Scheduler   Kernel
+QWAVEdrv     QWAVE driver           Kernel
+Ramdisk      Windows RAM Disk Drive Kernel
+RasAcd       Remote Access Auto Con Kernel
+RasAgileVpn  WAN Miniport (IKEv2)   Kernel
+Rasl2tp      WAN Miniport (L2TP)    Kernel
+RasPppoe     Remote Access PPPOE Dr Kernel
+RasSstp      WAN Miniport (SSTP)    Kernel
+rdbss        Redirected Buffering S File System
+rdpbus       Remote Desktop Device  Kernel
+RDPDR        Remote Desktop Device  Kernel
+RdpVideoMini Remote Desktop Video M Kernel
+rdyboost     ReadyBoost             Kernel
+ReFS         ReFS                   File System
+ReFSv1       ReFSv1                 File System
+RFCOMM       Bluetooth Device (RFCO Kernel
+rhproxy      Resource Hub proxy dri Kernel
+rspndr       Link-Layer Topology Di Kernel
+rt640x64     Realtek RT640 NT Drive Kernel        5/24/2019 1:47:02 AM
+RtkBtFilter  Realtek Bluetooth Filt Kernel        11/20/2019 12:02:04 AM
+RTWlanE02    Realtek Wireless LAN 8 Kernel        5/26/2019 12:58:52 AM
+s3cap        s3cap                  Kernel
+sbp2port     SBP-2 Transport/Protoc Kernel
+scfilter     Smart card PnP Class F Kernel
+scmbus       Microsoft Storage Clas Kernel
+sdbus        sdbus                  Kernel
+SDFRd        SDF Reflector          Kernel
+sdstor       SD Storage Port Driver Kernel
+SerCx        Serial UART Support Li Kernel
+SerCx2       Serial UART Support Li Kernel
+Serenum      Serenum Filter Driver  Kernel
+Serial       Serial port driver     Kernel
+sermouse     Serial Mouse Driver    Kernel
+sfloppy      High-Capacity Floppy D Kernel
+SgrmAgent    System Guard Runtime M Kernel
+SiSRaid2     SiSRaid2               Kernel        9/24/2008 11:28:20 AM
+SiSRaid4     SiSRaid4               Kernel        10/1/2008 2:56:04 PM
+SmartSAMD    SmartSAMD              Kernel        2/21/2019 9:54:44 AM
+smbdirect    smbdirect              File System
+spaceparser  Space Parser           Kernel
+spaceport    Storage Spaces Driver  Kernel
+SpatialGraph Holographic Spatial Gr Kernel
+SpbCx        Simple Peripheral Bus  Kernel
+srv2         Server SMB 2.xxx Drive File System
+srvnet       srvnet                 File System
+stexstor     stexstor               Kernel        11/26/2012 4:02:51 PM
+storahci     Microsoft Standard SAT Kernel
+storflt      Microsoft Hyper-V Stor Kernel
+stornvme     Microsoft Standard NVM Kernel
+storqosflt   Storage QoS Filter Dri File System
+storufs      Microsoft Universal Fl Kernel
+storvsc      storvsc                Kernel
+swenum       Software Bus Driver    Kernel
+Synth3dVsc   Synth3dVsc             Kernel
+Tcpip        TCP/IP Protocol Driver Kernel
+Tcpip6       @todo.dll,-100;Microso Kernel
+tcpipreg     TCP/IP Registry Compat Kernel
+tdx          NetIO Legacy TDI Suppo Kernel
+Telemetry    Intel(R) Telemetry Ser Kernel
+terminpt     Microsoft Remote Deskt Kernel
+TPM          TPM                    Kernel
+TsUsbFlt     Remote Desktop USB Hub Kernel
+TsUsbGD      Remote Desktop Generic Kernel
+tsusbhub     Remote Desktop USB Hub Kernel
+tunnel       Microsoft Tunnel Minip Kernel
+TXEIx64      Intel(R) Trusted Execu Kernel        10/11/2015 3:42:49 AM
+UASPStor     USB Attached SCSI (UAS Kernel
+UcmCx0101    USB Connector Manager  Kernel
+UcmTcpciCx01 UCM-TCPCI KMDF Class E Kernel
+UcmUcsiAcpiC UCM-UCSI ACPI Client   Kernel
+UcmUcsiCx010 UCM-UCSI KMDF Class Ex Kernel
+Ucx01000     USB Host Support Libra Kernel
+UdeCx        USB Device Emulation S Kernel
+udfs         udfs                   File System
+UEFI         Microsoft UEFI Driver  Kernel
+UevAgentDriv UevAgentDriver         File System
+Ufx01000     USB Function Class Ext Kernel
+UfxChipidea  USB Chipidea Controlle Kernel
+ufxsynopsys  USB Synopsys Controlle Kernel
+umbus        UMBus Enumerator Drive Kernel
+UmPass       Microsoft UMPass Drive Kernel
+UrsChipidea  Chipidea USB Role-Swit Kernel
+UrsCx01000   USB Role-Switch Suppor Kernel
+UrsSynopsys  Synopsys USB Role-Swit Kernel
+usbaudio     USB Audio Driver (WDM) Kernel
+usbaudio2    USB Audio 2.0 Service  Kernel
+usbccgp      Microsoft USB Generic  Kernel
+usbcir       eHome Infrared Receive Kernel
+usbehci      Microsoft USB 2.0 Enha Kernel
+usbhub       Microsoft USB Standard Kernel
+USBHUB3      SuperSpeed Hub         Kernel
+usbohci      Microsoft USB Open Hos Kernel
+usbprint     Microsoft USB PRINTER  Kernel
+usbser       Microsoft USB Serial D Kernel
+USBSTOR      USB Mass Storage Drive Kernel
+usbuhci      Microsoft USB Universa Kernel
+usbvideo     USB Video Device (WDM) Kernel
+USBXHCI      USB xHCI Compliant Hos Kernel
+vdrvroot     Microsoft Virtual Driv Kernel
+VerifierExt  Driver Verifier Extens Kernel
+vhdmp        vhdmp                  Kernel
+vhf          Virtual HID Framework  Kernel
+Vid          Vid                    Kernel
+VirtualRende VirtualRender          Kernel
+vmbus        Virtual Machine Bus    Kernel
+VMBusHID     VMBusHID               Kernel
+vmgid        Microsoft Hyper-V Gues Kernel
+volmgr       Volume Manager Driver  Kernel
+volmgrx      Dynamic Volume Manager Kernel
+volsnap      Volume Shadow Copy dri Kernel
+volume       Volume driver          Kernel
+vpci         Microsoft Hyper-V Virt Kernel
+vsmraid      vsmraid                Kernel        4/22/2014 12:21:41 PM
+VSTXRAID     VIA StorX Storage RAID Kernel        1/21/2013 11:00:28 AM
+vwifibus     Virtual Wireless Bus D Kernel
+vwififlt     Virtual WiFi Filter Dr Kernel
+vwifimp      Virtual WiFi Miniport  Kernel
+WacomPen     Wacom Serial Pen HID D Kernel
+wanarp       Remote Access IP ARP D Kernel
+wanarpv6     Remote Access IPv6 ARP Kernel
+wcifs        Windows Container Isol File System
+wcnfs        Windows Container Name File System
+WdBoot       Microsoft Defender Ant Kernel
+Wdf01000     Kernel Mode Driver Fra Kernel
+WdFilter     Microsoft Defender Ant File System
+wdiwifi      WDI Driver Framework   Kernel
+WdmCompanion WdmCompanionFilter     Kernel
+WdNisDrv     Microsoft Defender Ant Kernel
+WFPLWFS      Microsoft Windows Filt Kernel
+WIMMount     WIMMount               File System
+WindowsTrust Windows Trusted Execut Kernel
+WindowsTrust Microsoft Windows Trus Kernel
+WinMad       WinMad Service         Kernel        6/19/2019 6:18:11 AM
+WinNat       Windows NAT Driver     Kernel
+WINUSB       WinUsb Driver          Kernel
+WinVerbs     WinVerbs Service       Kernel        6/19/2019 6:18:12 AM
+WirelessButt HP Wireless Button Dri Kernel        1/31/2019 10:45:23 PM
+WmiAcpi      Microsoft Windows Mana Kernel
+Wof          Windows Overlay File S File System
+WpdUpFltr    WPD Upper Class Filter Kernel
+ws2ifsl      Winsock IFS Driver     Kernel
+WudfPf       User Mode Driver Frame Kernel
+WUDFRd       Windows Driver Foundat Kernel
+WUDFWpdFs    WPD File System driver Kernel
+WUDFWpdMtp   WUDFWpdMtp             Kernel
+xboxgip      Xbox Game Input Protoc Kernel
+xinputhid    XINPUT HID Filter Driv Kernel
+
+
+
+
+
+
+
+
+C:\Users\USER>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.22.38:51430    20.198.119.84:https    ESTABLISHED
+  TCP    192.168.22.38:51469    202.73.227.225:https   CLOSE_WAIT
+  TCP    192.168.22.38:51470    152.199.43.62:https    CLOSE_WAIT
+  TCP    192.168.22.38:51492    sf-in-f188:5228        ESTABLISHED
+  TCP    192.168.22.38:51495    vip0x008:http          ESTABLISHED
+  TCP    192.168.22.38:51496    https-117-121-250-129:http  ESTABLISHED
+  TCP    192.168.22.38:51499    vip0x008:http          ESTABLISHED
+  TCP    192.168.22.38:51500    https-117-121-250-129:http  ESTABLISHED
+
+
+
+
+
+
+
+
+C:\Users\USER>powercfg / a
+Invalid Parameters -- try "/?" for help
+
+
+
+
+
+
+
+C:\Users\USER>date
+The current date is: Thu 08/18/2022
+Enter the new date: (mm-dd-yy)
+
+
+
+
+
+
+
+C:\Users\USER>ver
+
+Microsoft Windows [Version 10.0.19044.1766]
+
+
+
+
+
+C:\Users\USER>time
+The current time is: 21:58:22.13
+Enter the new time:
+
+
+
+
+
+
+C:\Users\USER>ftype
+Access=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Access.ACCDAExtension.15=C:\PROGRA~2\MICROS~1\Office15\MSACCESS.EXE /NOSTARTUP "%1"
+Access.ACCDCFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1"
+Access.ACCDEFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.ACCDRFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /RUNTIME "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.ACCDTFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1"
+Access.ADEFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.Application.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.BlankDatabaseTemplate.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /NEWDB "%1"
+Access.BlankProjectTemplate.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /NEWDB "%1"
+Access.Extension.15=C:\PROGRA~2\MICROS~1\Office15\MSACCESS.EXE /NOSTARTUP "%1"
+Access.MDBFile="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.MDEFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.Project.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.Shortcut.DataAccessPage.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenDataAccessPage "%1"]
+Access.Shortcut.Diagram.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenDiagram "%1"]
+Access.Shortcut.Form.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenForm "%1"]
+Access.Shortcut.Function.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /SHELLSYSTEM [OpenFunction "%1"]
+Access.Shortcut.Macro.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [ShellOpenMacro "%1"]
+Access.Shortcut.Module.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenModule "%1"]
+Access.Shortcut.Query.1=C:\PROGRA~2\MICROS~1\Office15\MSACCESS.EXE /NOSTARTUP /SHELLSYSTEM [OpenQuery "%1"]
+Access.Shortcut.Report.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenReport "%1", 2]
+Access.Shortcut.StoredProcedure.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenStoredProcedure "%1"]
+Access.Shortcut.Table.1=C:\PROGRA~2\MICROS~1\Office15\MSACCESS.EXE /NOSTARTUP /SHELLSYSTEM [OpenTable "%1"]
+Access.Shortcut.View.1="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP /SHELLSYSTEM [OpenView "%1"]
+Access.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Access.WebApplicationReference.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1" %2 %3 %4 %5 %6 %7 %8 %9
+Access.WizardDataFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1"
+Access.WizardUserDataFile.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1"
+Access.Workgroup.15="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE" /NOSTARTUP "%1"
+accesshtmlfile="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE"
+accessthmltemplate="C:\Program Files (x86)\Microsoft Office\Office15\MSACCESS.EXE"
+acrobat="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" /u "%1"
+AcroExch.acrobatsecuritysettings.1="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.Document="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.Document.7="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.FDFDoc="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.pdfxml.1="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.XDPDoc="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+AcroExch.XFDFDoc="C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe" "%1"
+Adobe.adobebridge=C:\Program Files (x86)\Adobe\Adobe Bridge CS3\Bridge.exe "%L"
+adobebridge=C:\Program Files (x86)\Adobe\Adobe Bridge CS3\Bridge.exe  "%L"
+AIR.InstallerPackage=c:\PROGRA~2\COMMON~1\ADOBEA~1\Versions\1.0\ADOBEA~1.EXE "%1"
+Application.Manifest="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\dfshim.dll",ShOpenVerbApplication %1
+Application.Reference="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\dfshim.dll",ShOpenVerbShortcut %1|%2
+batfile="%1" %*
+bootstrap.vsto.1=rundll32.exe "C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\vstoee.dll",InstallVstoSolution %1
+Bridge.Collection="C:\Program Files (x86)\Adobe\Adobe Bridge CS3\Bridge.exe"  "%1"
+brmFile="PrintBrmUI.exe" /import /file:"%1"
+CABFolder=%SystemRoot%\Explorer.exe /idlist,%I,%L
+CamSuite.Content="C:\Program Files (x86)\Reallusion\ContentInstall\RLContentInstallAPU.exe" "%1"
+CATFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenCAT %1
+cclaunch="C:\Program Files\CCleaner\ccleaner.exe" /%1
+CERFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenCER %1
+CertificateStoreFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenSTR %1
+certificate_wab_auto_file="%ProgramFiles%\Windows Mail\wab.exe" /certificate "%1"
+chm.file="%SystemRoot%\hh.exe" %1
+cmdfile="%1" %*
+comfile="%1" %*
+CompressedFolder=%SystemRoot%\Explorer.exe /idlist,%I,%L
+contact_wab_auto_file="%ProgramFiles%\Windows Mail\wab.exe" /contact "%1"
+CRLFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenCRL %1
+desktopthemepackfile=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\themecpl.dll,OpenThemeAction %1
+DeviceCentral.adpp="C:\Program Files (x86)\Adobe\Adobe Device Central CS3\DeviceCentral.exe" "%1"
+DeviceCentral.advs="C:\Program Files (x86)\Adobe\Adobe Device Central CS3\DeviceCentral.exe" "%1"
+Diagnostic.Cabinet=%SystemRoot%\system32\msdt.exe /cab "%1"
+Diagnostic.Config=%SystemRoot%\system32\msdt.exe /path "%1"
+Diagnostic.Document=%SystemRoot%\system32\msdt.exe /path "%1"
+Diagnostic.Perfmon.Config=%SystemRoot%\system32\perfmon /sys /load "%1"
+Diagnostic.Perfmon.Document=%SystemRoot%\system32\perfmon /sys /open "%1"
+Diagnostic.Resmon.Config=%SystemRoot%\system32\perfmon /res /load "%1"
+DLNA-PLAYSINGLE="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+docxfile="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+dqyfile=C:\PROGRA~2\MICROS~1\Office15\EXCEL.EXE
+emffile="%systemroot%\system32\mspaint.exe" "%1"
+evtfile=%SystemRoot%\system32\eventvwr.exe /l:"%1"
+evtxfile=%SystemRoot%\system32\eventvwr.exe /l:"%1"
+Excel=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Excel.Addin="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.AddInMacroEnabled="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Backup="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Chart=C:\PROGRA~2\MICROS~1\Office15\EXCEL.EXE /dde
+Excel.CSV="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Macrosheet="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.OpenDocumentSpreadsheet.12="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Sheet.12="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Sheet.8="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.SheetBinaryMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.SheetMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.SLK="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Template="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.Template.8="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.TemplateMacroEnabled="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Excel.Workspace="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excel.XLL="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE" /dde
+Excelhtmlfile="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE"
+Excelhtmltemplate="C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE"
+exefile="%1" %*
+Explorer.AssocActionId.BurnSelection=%SystemRoot%\explorer.exe
+Explorer.AssocActionId.EraseDisc=%SystemRoot%\explorer.exe
+Explorer.AssocActionId.ZipSelection=%SystemRoot%\explorer.exe
+Explorer.AssocProtocol.search-ms=%SystemRoot%\Explorer.exe /separate,/idlist,%I,%L
+FaxCover.Document=C:\Windows\System32\fxscover.exe "%1"
+feed=C:\Program Files (x86)\Winamp\winamp.exe /HANDLE %1
+feeds="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+FirefoxHTML-E7CF176E110C211B="C:\Program Files (x86)\Mozilla Firefox\firefox.exe" -osint -url "%1"
+FirefoxURL-E7CF176E110C211B="C:\Program Files (x86)\Mozilla Firefox\firefox.exe" -osint -url "%1"
+Folder=%SystemRoot%\Explorer.exe
+ftp="C:\Program Files\Internet Explorer\iexplore.exe" %1
+giffile="C:\Program Files\Internet Explorer\iexplore.exe" %1
+Groove.SPFS.OneNoteStub="C:\Program Files (x86)\Microsoft Office\Office15\GROOVE.EXE" /OneNoteStub: "%1"
+group_wab_auto_file="%ProgramFiles%\Windows Mail\wab.exe" /Group "%1"
+grvOpen=C:\PROGRA~2\MICROS~1\Office15\GROOVE.EXE /TakeOffline: "%1"
+hlpfile=%SystemRoot%\winhlp32.exe %1
+htafile=C:\Windows\SysWOW64\mshta.exe "%1" {1E460BD7-F1C3-4B2E-88BF-4E770A288AF5}%U{1E460BD7-F1C3-4B2E-88BF-4E770A288AF5} %*
+htmlfile="C:\Program Files\Internet Explorer\IEXPLORE.EXE" %1
+http="C:\Program Files\Internet Explorer\iexplore.exe" %1
+https="C:\Program Files\Internet Explorer\iexplore.exe" %1
+ICY=C:\Program Files (x86)\Winamp\winamp.exe %1
+IE.AssocFile.HTM="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.AssocFile.MHT="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.AssocFile.PARTIAL="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.AssocFile.SVG="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.AssocFile.URL="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\ieframe.dll",OpenURL %l
+IE.AssocFile.WEBSITE="C:\Program Files\Internet Explorer\iexplore.exe" -w "%l" %*
+IE.AssocFile.XHT="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.FTP="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.HTTP="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IE.HTTPS="C:\Program Files\Internet Explorer\iexplore.exe" %1
+IMEDictionaryCompiler="%WINDIR%\system32\IME\SHARED\imewdbld.exe" "%1" %*
+imesxfile="%WINDIR%\system32\IME\SHARED\imesearch.exe" "%1"
+inffile=%SystemRoot%\system32\NOTEPAD.EXE %1
+InfoPath=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+InfoPath.Document.4="C:\Program Files (x86)\Microsoft Office\Office15\INFOPATH.EXE" "%1"
+InfoPath.Solution.4="C:\Program Files (x86)\Microsoft Office\Office15\INFOPATH.EXE" "%1"
+InfoPath.SolutionManifest.4="C:\Program Files (x86)\Microsoft Office\Office15\INFOPATH.EXE" "%1"
+inifile=%SystemRoot%\system32\NOTEPAD.EXE %1
+Intel.GraphicsControlPanel.igp.1=GfxUIEx.exe %1
+InternetShortcut="C:\WINDOWS\system32\rundll32.exe" "C:\WINDOWS\system32\ieframe.dll",OpenURL %l
+iqyfile=C:\PROGRA~2\MICROS~1\Office15\EXCEL.EXE /dde
+jarfile="C:\Program Files\Java\jre1.8.0_91\bin\javaw.exe" -jar "%1" %*
+jnlp="C:\Program Files\Java\jre1.8.0_91\bin\jp2launcher.exe" -securejws "%1"
+JNLPFile="C:\Program Files\Java\jre1.8.0_91\bin\javaws.exe" "%1"
+jnlps="C:\Program Files\Java\jre1.8.0_91\bin\jp2launcher.exe" -securejws "%1"
+JSEFile=C:\Windows\System32\WScript.exe "%1" %*
+JSFile=C:\Windows\System32\WScript.exe "%1" %*
+JSXFile="C:\Program Files (x86)\Adobe\Adobe Utilities\ExtendScript Toolkit 2\ExtendScript Toolkit 2.exe" -run "%1"
+KMPlayer.3g2="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.3gp="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.3gp2="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.3gpp="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.a52="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.aac="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ac3="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.aif="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.aifc="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.aiff="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.alac="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.amr="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.amv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ape="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.asf="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ass="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.asx="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.au="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.avi="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.avs="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.cda="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.dat="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.divx="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.dts="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.evo="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.f4v="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.flac="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.flc="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.fli="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.flv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.gvi="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.hdmov="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.idx="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ifo="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.k3g="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.kpl="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m1a="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m1v="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m2a="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m2t="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m2ts="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m2v="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m3u="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m4a="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m4b="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m4p="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.m4v="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mid="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mk3d="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mka="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mkv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mov="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp+="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp1="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp2="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp2v="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp3="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mp4="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpa="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpc="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpe="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpeg="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpg="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpp="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mpv2="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mqv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mts="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.mtv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.nsa="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.nsv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ofr="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ofs="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.oga="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ogg="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ogm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ogv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.pls="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.qt="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ra="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ram="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rmj="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rmm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rms="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rmvb="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rt="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.rv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.skm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.smi="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.snd="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.spx="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.srt="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ssa="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.sub="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.swf="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.tp="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.tpr="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.ts="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.tta="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.vob="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.vp6="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wav="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wave="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wax="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.webm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wm="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wma="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wmp="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wmv="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wmx="C:\KMPlayer\KMPlayer.exe" "%1"
+KMPlayer.wv="C:\KMPlayer\KMPlayer.exe" "%1"
+LDAP="%ProgramFiles%\Windows Mail\wab.exe" "/ldap:%1"
+Lync15=C:\PROGRA~2\MICROS~1\Office15\lync.exe "%1"
+Lync15classic=C:\PROGRA~2\MICROS~1\Office15\lync.exe "%1"
+mailto="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" -c IPM.Note /mailto "%1"
+mhtmlfile="C:\Program Files\Internet Explorer\IEXPLORE.EXE" %1
+microsoft-edge="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" "%1"
+Microsoft.Lync.15ClassicJoin.1=C:\PROGRA~2\MICROS~1\Office15\lync.exe "%1"
+Microsoft.Lync.15Join.1=C:\PROGRA~2\MICROS~1\Office15\lync.exe "%1"
+Microsoft.PowerShellConsole.1="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -p "%1"
+Microsoft.PowerShellData.1="C:\Windows\System32\notepad.exe" "%1"
+Microsoft.PowerShellModule.1="C:\Windows\System32\notepad.exe" "%1"
+Microsoft.PowerShellScript.1="C:\Windows\System32\notepad.exe" "%1"
+Microsoft.ProvTool.Provisioning.1="%SystemRoot%\System32\provtool.exe" "%1" /source ShellOpen
+Microsoft.System.Update.1="%systemroot%\system32\wusa.exe" "%1" %*
+Microsoft.Website="C:\Program Files\Internet Explorer\IEXPLORE.EXE" -w "%l" %*
+Microsoft.Workfolders=C:\Windows\System32\control.exe /name Microsoft.WorkFolders
+MMS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+mplayerc.3g2="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.3gp="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.3gp2="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.3gpp="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.aac="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ac3="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.alac="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.amr="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ape="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.apl="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.asf="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.avi="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.bdmv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.divx="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.dts="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.dv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.evo="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.flac="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.flv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.hdmov="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ifo="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m1v="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m2p="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m2t="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m2ts="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m2v="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m3u="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m4a="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.m4v="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mka="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mkv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mov="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mp2v="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mp3="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mp4="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mp4v="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpc="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpcpl="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpe="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpeg="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpg="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpls="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpv2="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mpv4="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.mts="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.oga="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ogg="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ogm="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ogv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.pls="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ra="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ram="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.rm="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.rmvb="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.tps="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.ts="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.tta="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.vob="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.webm="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.wma="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.wmv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+mplayerc.wv="C:\Program Files (x86)\K-Lite Codec Pack\Media Player Classic\mpc-hc.exe" "%1"
+ms-access=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+ms-availablenetworks="%SystemRoot%\system32\LaunchWinApp.exe" "%1"
+ms-excel=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+ms-infopath=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+ms-mmsys=%SystemRoot%\System32\rundll32.exe %SystemRoot%\System32\shell32.dll,Control_RunDLL %SystemRoot%\System32\mmsys.cpl %1
+ms-msdt="%SystemRoot%\system32\msdt.exe" %1
+ms-msime-imepad=C:\Windows\System32\IME\SHARED\IMEPADSV.EXE %1
+ms-msime-imjpdct=C:\Windows\System32\IME\IMEJP\IMJPDCT.EXE %1
+ms-pchealthcheck="C:\Program Files\PCHealthCheck\PCHealthCheck.exe"
+ms-perception-simulation=%SystemRoot%\system32\PerceptionSimulation\PerceptionSimulationInput.exe %1
+ms-powerpoint=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+ms-publisher=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+ms-quick-assist="%SystemRoot%\system32\quickassist.exe" %1
+ms-rdx-document=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\RDXService,OpenRDXDocument %1
+ms-settings-connectabledevices="%SystemRoot%\system32\LaunchWinApp.exe" "%1"
+ms-settings-displays-topology="%SystemRoot%\system32\LaunchWinApp.exe" "%1"
+ms-virtualtouchpad="%SystemRoot%\system32\LaunchWinApp.exe" "%1"
+ms-word=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+mscfile=%SystemRoot%\system32\mmc.exe "%1" %*
+MSDASC=Rundll32.exe "%CommonProgramFiles%\System\OLE DB\oledb32.dll",OpenDSLFile %1
+MSEdgeHTM="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --single-argument %1
+MSEdgeMHT="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --single-argument %1
+MSEdgePDF="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --single-argument %1
+Msi.Package="%SystemRoot%\System32\msiexec.exe" /i "%1" %*
+Msi.Patch="%SystemRoot%\System32\msiexec.exe" /p "%1" %*
+MSInfoFile=%SystemRoot%\system32\msinfo32.exe "%1"
+MSSppLicenseFile="iexplore.exe" "%1"
+MSStorageSense=explorer ms-settings:storagesense
+msstylesfile=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,Control_RunDLL %SystemRoot%\system32\desk.cpl desk,@Appearance /Action:OpenMSTheme /file:"%1"
+NeroCoverDesigner.Files7.bmp="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.cdc="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.gif="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.jif="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.jpg="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.mp4="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.ncd="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.nct="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.ncw="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.pcx="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.png="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.tga="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.tif="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.wmf="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroCoverDesigner.Files7.wpg="C:\Program Files (x86)\Nero\Nero 7\Nero CoverDesigner\CoverDes.exe" "%1"
+NeroExpress.Files7.cue="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.iso="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nab="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nhf="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nhv="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nmd="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nr3="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nr4="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nra="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrb="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrc="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrd="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nre="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrg="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrh="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nri="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrj="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrm="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrs="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nru="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrv="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nrw="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroExpress.Files7.nsd="C:\Program Files (x86)\Nero\Nero 7\Core\nero.exe" "%1"
+NeroPhotoSnapViewer.Files7.bmp="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.cut="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.dds="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.dib="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.gif="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.ico="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.iff="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jfif="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jif="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jng="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jpe="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jpeg="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.jpg="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.koa="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.lbm="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.ljp="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.mng="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.ncw="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.pbm="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.pcd="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.pcx="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.png="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.ppm="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.psd="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.tga="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.tif="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.tiff="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.wbm="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.wbmp="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.wmf="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.wpg="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroPhotoSnapViewer.Files7.xbm="C:\Program Files (x86)\Nero\Nero 7\Nero PhotoSnap\PhotoSnapViewer.exe" "%1"
+NeroVision.Document="C:\Program Files (x86)\Nero\Nero 7\Nero Vision\NeroVision.exe" "%1"
+odtfile="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+OfficeListShortcut="C:\Program Files (x86)\Microsoft Office\Office15\MSPUB.EXE" %1
+OfficeTheme.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+oms=rundll32.exe C:\PROGRA~2\MICROS~1\Office15\OMSMAIN.DLL, OmsProtocolHandler %1
+OneNote="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" /hyperlink "%1"
+OneNote.Folder.1="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" "%1"
+OneNote.Notebook.1="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" "%1"
+OneNote.Package="C:\Program Files (x86)\Microsoft Office\Office15\ONENOTE.EXE" "%1"
+OneNote.Section.1="C:\Program Files (x86)\Microsoft Office\Office15\ONENOTE.EXE" "%1"
+OneNote.TableOfContents="C:\Program Files (x86)\Microsoft Office\Office15\ONENOTE.EXE" /navigate "%1"
+OneNote.TableOfContents.12="C:\Program Files (x86)\Microsoft Office\Office15\ONENOTE.EXE" /navigate "%1"
+OneNote.URL.15="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" /hyperlink "%1"
+OneNoteDesktop="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" /hyperlink "%1"
+OneNoteDesktop.URL.15="C:\PROGRA~2\MICROS~1\Office15\ONENOTE.EXE" /hyperlink "%1"
+opensearchdescription=%SystemRoot%\explorer.exe
+Outlook.File.eml.15=C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE /eml "%1"
+Outlook.File.hol.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /hol "%1"
+Outlook.File.ics.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /ical "%1"
+Outlook.File.msg.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /f "%1"
+Outlook.File.oft.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /t "%1"
+Outlook.File.pst.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /pst "%1"
+Outlook.File.vcf.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /v "%1"
+Outlook.File.vcs.15="C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" /vcal "%1"
+Outlook.URL.feed.15="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+Outlook.URL.mailto.15="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" -c IPM.Note /mailto "%1"
+Outlook.URL.stssync.15="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+Outlook.URL.webcal.15="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+P7RFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenP7R %1
+P7SFile=%SystemRoot%\system32\\rundll32.exe cryptext.dll,CryptExtOpenPKCS7 %1
+pbkfile=%SystemRoot%\system32\rasphone.exe -f "%1"
+pcast=C:\Program Files (x86)\Winamp\winamp.exe /HANDLE %1
+PerfFile=%SystemRoot%\system32\mmc.exe %systemroot%\system32\perfmon.msc /F "%1"
+PFXFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenPFX %1
+Photoshop.ActionsFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.AdobePlugin="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ArbitraryMapFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ASVColAdjFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.AXTAdjColFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.BMPFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.BrushesFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileCanon.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileCanon2.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileDigital.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileEpson.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileFoveon.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileFujifilm.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileKodak.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileLeaf.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileMinolta.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileNikon.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileOlympus.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFilePentax.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CameraRawFileSony.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CHAFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CINFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ColorTableFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CurvesFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CustomFilterKernel="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.CustomShapes="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.DuotoneSettingsFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ExchangeableSwatchFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.FileInfo="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.Gradients="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.HalftoneScreens="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.HueSatFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.Image.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.KYSFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe"  "%1"
+Photoshop.LevelsFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.MenuCustomizationFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.MonitorSetupFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.OpenEXRFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.Patterns="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PCDFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PCXFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PDDFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PDFFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PDPFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PlugIn="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PortableBitMapFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PreferencesFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PrintingInksFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ProofSetup="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PSBFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.PXRFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.RadianceFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.SCTFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.SepTablesFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.ShapeCurves="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.SHHFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.STAFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.Styles="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.SwatchesFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.TGAFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.TIFFFile.10="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.TransferFunctionsFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+Photoshop.VariationsFile="C:\Program Files (x86)\Adobe\Adobe Photoshop CS3\Photoshop.exe" "%1"
+PhotoViewer.FileAssoc.Tiff=%SystemRoot%\System32\rundll32.exe "%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll", ImageView_Fullscreen %1
+piffile="%1" %*
+PowerPoint=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+PowerPoint.Addin.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.Addin.8="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1"
+PowerPoint.OpenDocumentPresentation.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.Show.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.Show.8="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.ShowMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.Slide.12=C:\PROGRA~2\MICROS~1\Office15\POWERPNT.EXE "%1" /ou "%u"
+PowerPoint.Slide.8=C:\PROGRA~2\MICROS~1\Office15\POWERPNT.EXE "%1" /ou "%u"
+PowerPoint.SlideMacroEnabled.12=C:\PROGRA~2\MICROS~1\Office15\POWERPNT.EXE "%1" /ou "%u"
+PowerPoint.SlideShow.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" /s "%1" /ou "%u"
+PowerPoint.SlideShow.8="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" /s "%1" /ou "%u"
+PowerPoint.SlideShowMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" /s "%1" /ou "%u"
+PowerPoint.Template.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.Template.8="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.TemplateMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+PowerPoint.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+PowerPoint.Wizard.8="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE" "%1" /ou "%u"
+powerpointhtmlfile="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE"
+powerpointhtmltemplate="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE"
+powerpointxmlfile="C:\Program Files (x86)\Microsoft Office\Office15\POWERPNT.EXE"
+prffile="%SystemRoot%\System32\rundll32.exe" "%SystemRoot%\System32\msrating.dll",ClickedOnPRF %1
+Publisher=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Publisher.Document.15="C:\Program Files (x86)\Microsoft Office\Office15\MSPUB.EXE" /ou "%u" "%1"
+Publisher.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Python.ArchiveFile="C:\WINDOWS\py.exe" "%L" %*
+Python.CompiledFile="C:\WINDOWS\py.exe" "%L" %*
+Python.File="C:\WINDOWS\py.exe" "%L" %*
+Python.NoConArchiveFile="C:\WINDOWS\pyw.exe" "%L" %*
+Python.NoConFile="C:\WINDOWS\pyw.exe" "%L" %*
+ratfile="%SystemRoot%\System32\rundll32.exe" "%SystemRoot%\System32\msrating.dll",ClickedOnRAT %1
+RDP.File="%systemroot%\system32\mstsc.exe" "%1"
+regedit=regedit.exe "%1"
+regfile=regedit.exe "%1"
+RemoteAssistance.1="%systemRoot%\system32\msra.exe" -openfile "%1"
+rlefile="%systemroot%\system32\mspaint.exe" "%1"
+rlogin="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\url.dll",TelnetProtocolHandler %l
+rtffile="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+SavedDsQuery=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\dsquery.dll,OpenSavedDsQuery %1
+SC=C:\Program Files (x86)\Winamp\winamp.exe %1
+scrfile="%1" /S
+scriptletfile="C:\Windows\System32\NOTEPAD.EXE" "%1"
+search=%SystemRoot%\Explorer.exe /separate,/idlist,%I,%L
+search-ms=%SystemRoot%\Explorer.exe /separate,/idlist,%I,%L
+SHCmdFile=%SystemRoot%\explorer.exe
+SHOUT=C:\Program Files (x86)\Winamp\winamp.exe %1
+sh_auto_file="C:\Program Files\Git\git-bash.exe" --no-cd "%L" %*
+SPCFile=%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenPKCS7 %1
+stssync="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+svgfile="C:\Program Files\Internet Explorer\IEXPLORE.EXE" %1
+telnet="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\url.dll",TelnetProtocolHandler %l
+textfile="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+themefile=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\themecpl.dll,OpenThemeAction %1
+themepackfile=%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\themecpl.dll,OpenThemeAction %1
+TIFImage.Document=%SystemRoot%\System32\rundll32.exe "%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll", ImageView_Fullscreen %1
+tn3270="C:\Windows\System32\rundll32.exe" "C:\Windows\System32\url.dll",TelnetProtocolHandler %l
+txtfile=%SystemRoot%\system32\NOTEPAD.EXE %1
+Undecided=%SystemRoot%\system32\OpenWith.exe "%1"
+Unknown=%SystemRoot%\system32\OpenWith.exe "%1"
+UNSV=C:\Program Files (x86)\Winamp\winamp.exe %1
+UVOX=C:\Program Files (x86)\Winamp\winamp.exe %1
+VBEFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+VBSFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+vcard_wab_auto_file="%ProgramFiles%\Windows Mail\wab.exe" /vcard "%1"
+VisioViewer.Viewer="C:\Program Files (x86)\Internet Explorer\iexplore.exe" -nohome
+WAB.AssocProtocol.LDAP="%ProgramFiles%\Windows Mail\wab.exe" "/ldap:%1"
+wab_auto_file="%ProgramFiles%\Windows Mail\wab.exe" /Import "%1"
+wbcatfile=%SystemRoot%\system32\sdclt.exe /restorepage
+wcxfile="C:\Windows\System32\xwizard.exe" RunWizard /u {7940acf8-60ba-4213-a7c3-f3b400ee266d} /z%1
+webcal="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+webcals="C:\PROGRA~2\MICROS~1\Office15\OUTLOOK.EXE" /share "%1"
+webpnpFile=%SystemRoot%\system32\wpnpinst.exe %1
+Windows.CompositeFont="%SystemRoot%\System32\notepad.exe" "%1"
+Windows.XamlDocument="C:\Windows\System32\PresentationHost.exe" "%1" %*
+Windows.Xbap="C:\Windows\System32\PresentationHost.exe" "%1" %*
+WindowsStore.License=%SystemRoot%\System32\licensemanagershellext.exe "%1"
+WinRAR="C:\Program Files (x86)\WinRAR\WinRAR.exe" "%1"
+WinRAR.REV="C:\Program Files (x86)\WinRAR\WinRAR.exe" "%1"
+WinRAR.ZIP="C:\Program Files (x86)\WinRAR\WinRAR.exe" "%1"
+wmffile="%systemroot%\system32\mspaint.exe" "%1"
+WMP.DVR-MSFile="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP.WTVFile="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.3G2="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.3GP="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.ADTS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.AIFF="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.ASF="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:7 /Open "%L"
+WMP11.AssocFile.ASX="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.AU="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.AVI="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:8 /Open "%L"
+WMP11.AssocFile.CDA="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.FLAC="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.M2TS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:12 /Open "%L"
+WMP11.AssocFile.M3U="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.M4A="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MIDI="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.MK3D="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MKA="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MKV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MOV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MP3="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MP4="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MPEG="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:9 /Open "%L"
+WMP11.AssocFile.TTS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:12 /Open "%L"
+WMP11.AssocFile.WAV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.WAX="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.wma="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:5 /Open "%L"
+WMP11.AssocFile.WMD="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /WMPackage:"%L"
+WMP11.AssocFile.WMS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /layout:"%L"
+WMP11.AssocFile.WMV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:7 /Open "%L"
+WMP11.AssocFile.WMZ="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /layout:"%L"
+WMP11.AssocFile.WPL="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.WVX="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocProtocol.DLNA-PLAYSINGLE="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+WMP11.AssocProtocol.MMS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+Word=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Word.Backup.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Document.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Document.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.DocumentMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.OpenDocumentText.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1"
+Word.RTF.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Template.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Template.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.TemplateMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+wordhtmlfile="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE"
+wordhtmltemplate="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE"
+Wordpad.Document.1="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+WPDContextMenu.Url="%SystemRoot%\System32\rundll32.exe" "%SystemRoot%\System32\ieframe.dll",OpenURL %l
+WSFFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+WSHFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+XEV.FailSafeApp=%SystemRoot%\system32\NOTEPAD.EXE %1
+XEV.GenericApp="C:\Program Files\Internet Explorer\iexplore.exe" %1
+XEV.OriginalApp="C:\Program Files\Internet Explorer\iexplore.exe" %1
+xhtmlfile="C:\Program Files\Internet Explorer\IEXPLORE.EXE" %1
+xmlfile="C:\Program Files\Internet Explorer\iexplore.exe" %1
+xslfile="C:\Program Files\Internet Explorer\iexplore.exe" %1
+zapfile=%SystemRoot%\system32\NOTEPAD.EXE %1
+
+
+
+
+
+
+
+
+ "%L"
+WMP11.AssocFile.MKV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MOV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MP3="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MP4="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:6 /Open "%L"
+WMP11.AssocFile.MPEG="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:9 /Open "%L"
+WMP11.AssocFile.TTS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:12 /Open "%L"
+WMP11.AssocFile.WAV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.WAX="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.wma="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:5 /Open "%L"
+WMP11.AssocFile.WMD="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /WMPackage:"%L"
+WMP11.AssocFile.WMS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /layout:"%L"
+WMP11.AssocFile.WMV="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:7 /Open "%L"
+WMP11.AssocFile.WMZ="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /layout:"%L"
+WMP11.AssocFile.WPL="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocFile.WVX="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /Open "%L"
+WMP11.AssocProtocol.DLNA-PLAYSINGLE="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+WMP11.AssocProtocol.MMS="%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" "%L"
+Word=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+Word.Backup.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Document.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Document.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.DocumentMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.OpenDocumentText.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1"
+Word.RTF.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Template.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.Template.8="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.TemplateMacroEnabled.12="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE" /n "%1" /o "%u"
+Word.UriLink.15=C:\PROGRA~2\MICROS~1\Office15\PROTOC~1.EXE "%1"
+wordhtmlfile="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE"
+wordhtmltemplate="C:\Program Files (x86)\Microsoft Office\Office15\WINWORD.EXE"
+Wordpad.Document.1="%ProgramFiles%\Windows NT\Accessories\WORDPAD.EXE" "%1"
+WPDContextMenu.Url="%SystemRoot%\System32\rundll32.exe" "%SystemRoot%\System32\ieframe.dll",OpenURL %l
+WSFFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+WSHFile="%SystemRoot%\System32\WScript.exe" "%1" %*
+XEV.FailSafeApp=%SystemRoot%\system32\NOTEPAD.EXE %1
+XEV.GenericApp="C:\Program Files\Internet Explorer\iexplore.exe" %1
+XEV.OriginalApp="C:\Program Files\Internet Explorer\iexplore.exe" %1
+xhtmlfile="C:\Program Files\Internet Explorer\IEXPLORE.EXE" %1
+xmlfile="C:\Program Files\Internet Explorer\iexplore.exe" %1
+xslfile="C:\Program Files\Internet Explorer\iexplore.exe" %1
+zapfile=%SystemRoot%\system32\NOTEPAD.EXE %1
+
+C:\Users\USER>color
+
+C:\Users\USER>colorred
+'colorred' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER>color red
+Sets the default console foreground and background colors.
+
+COLOR [attr]
+
+  attr        Specifies color attribute of console output
+
+Color attributes are specified by TWO hex digits -- the first
+corresponds to the background; the second the foreground.  Each digit
+can be any of the following values:
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+If no argument is given, this command restores the color to what it was
+when CMD.EXE started.  This value either comes from the current console
+window, the /T command line switch or from the DefaultColor registry
+value.
+
+The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
+the COLOR command with a foreground and background color that are the
+same.
+
+Example: "COLOR fc" produces light red on bright white
+
+C:\Users\USER>color 4
+
+
+
+
+
+
+:\Users\USER>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DA97-0CA9
+
+ Directory of C:\Users\USER
+
+08/18/2022  08:12 PM    <DIR>          .
+08/18/2022  08:12 PM    <DIR>          ..
+08/17/2022  10:55 PM               724 .bash_history
+08/17/2022  08:34 PM                64 .gitconfig
+08/15/2022  08:13 PM    <DIR>          .idlerc
+12/14/2018  07:49 PM    <DIR>          .oracle_jre_usage
+05/22/2021  01:33 AM    <DIR>          3D Objects
+08/18/2022  08:12 PM    <DIR>          aaa
+05/22/2021  01:33 AM    <DIR>          Contacts
+10/05/2021  08:19 AM    <DIR>          Desktop
+08/15/2022  08:34 PM    <DIR>          Documents
+08/17/2022  07:00 PM    <DIR>          Downloads
+05/22/2021  01:33 AM    <DIR>          Favorites
+05/22/2021  01:33 AM    <DIR>          Links
+05/22/2021  01:33 AM    <DIR>          Music
+08/20/2021  04:52 AM    <DIR>          OneDrive
+05/22/2021  01:33 AM    <DIR>          Pictures
+08/18/2022  07:38 PM                 0 ping
+05/22/2021  01:33 AM    <DIR>          Saved Games
+05/22/2021  01:33 AM    <DIR>          Searches
+10/05/2021  11:16 PM    <DIR>          Videos
+               3 File(s)            788 bytes
+              18 Dir(s)  62,438,690,816 bytes free
+
+
+
+
+
+
+
+
+C:\Users\USER>cd
+C:\Users\USER
+
+C:\Users\USER>cd . .
+
+
+
+
+
+
+C:\Users\USER>sc
+DESCRIPTION:
+        SC is a command line program used for communicating with the
+        Service Control Manager and services.
+USAGE:
+        sc <server> [command] [service name] <option1> <option2>...
+
+
+        The option <server> has the form "\\ServerName"
+        Further help on commands can be obtained by typing: "sc [command]"
+        Commands:
+          query-----------Queries the status for a service, or
+                          enumerates the status for types of services.
+          queryex---------Queries the extended status for a service, or
+                          enumerates the status for types of services.
+          start-----------Starts a service.
+          pause-----------Sends a PAUSE control request to a service.
+          interrogate-----Sends an INTERROGATE control request to a service.
+          continue--------Sends a CONTINUE control request to a service.
+          stop------------Sends a STOP request to a service.
+          config----------Changes the configuration of a service (persistent).
+          description-----Changes the description of a service.
+          failure---------Changes the actions taken by a service upon failure.
+          failureflag-----Changes the failure actions flag of a service.
+          sidtype---------Changes the service SID type of a service.
+          privs-----------Changes the required privileges of a service.
+          managedaccount--Changes the service to mark the service account
+                          password as managed by LSA.
+          qc--------------Queries the configuration information for a service.
+          qdescription----Queries the description for a service.
+          qfailure--------Queries the actions taken by a service upon failure.
+          qfailureflag----Queries the failure actions flag of a service.
+          qsidtype--------Queries the service SID type of a service.
+          qprivs----------Queries the required privileges of a service.
+          qtriggerinfo----Queries the trigger parameters of a service.
+          qpreferrednode--Queries the preferred NUMA node of a service.
+          qmanagedaccount-Queries whether a services uses an account with a
+                          password managed by LSA.
+          qprotection-----Queries the process protection level of a service.
+          quserservice----Queries for a local instance of a user service template.
+          delete----------Deletes a service (from the registry).
+          create----------Creates a service. (adds it to the registry).
+          control---------Sends a control to a service.
+          sdshow----------Displays a service's security descriptor.
+          sdset-----------Sets a service's security descriptor.
+          showsid---------Displays the service SID string corresponding to an arbitrary name.
+          triggerinfo-----Configures the trigger parameters of a service.
+          preferrednode---Sets the preferred NUMA node of a service.
+          GetDisplayName--Gets the DisplayName for a service.
+          GetKeyName------Gets the ServiceKeyName for a service.
+          EnumDepend------Enumerates Service Dependencies.
+
+        The following commands don't require a service name:
+        sc <server> <command> <option>
+          boot------------(ok | bad) Indicates whether the last boot should
+                          be saved as the last-known-good boot configuration
+          Lock------------Locks the Service Database
+          QueryLock-------Queries the LockStatus for the SCManager Database
+EXAMPLE:
+        sc start MyService
+
+
+QUERY and QUERYEX OPTIONS:
+        If the query command is followed by a service name, the status
+        for that service is returned.  Further options do not apply in
+        this case.  If the query command is followed by nothing or one of
+        the options listed below, the services are enumerated.
+    type=    Type of services to enumerate (driver, service, userservice, all)
+             (default = service)
+    state=   State of services to enumerate (inactive, all)
+             (default = active)
+    bufsize= The size (in bytes) of the enumeration buffer
+             (default = 4096)
+    ri=      The resume index number at which to begin the enumeration
+             (default = 0)
+    group=   Service group to enumerate
+             (default = all groups)
+
+SYNTAX EXAMPLES
+sc query                - Enumerates status for active services & drivers
+sc query eventlog       - Displays status for the eventlog service
+sc queryex eventlog     - Displays extended status for the eventlog service
+sc query type= driver   - Enumerates only active drivers
+sc query type= service  - Enumerates only Win32 services
+sc query state= all     - Enumerates all services & drivers
+sc query bufsize= 50    - Enumerates with a 50 byte buffer
+sc query ri= 14         - Enumerates with resume index = 14
+sc queryex group= ""    - Enumerates active services not in a group
+sc query type= interact - Enumerates all interactive services
+sc query type= driver group= NDIS     - Enumerates all NDIS drivers
+
+
+
+
+
+
+
+
+C:\Users\USER>compact
+
+ Listing C:\Users\USER\
+ New files added to this directory will not be compressed.
+
+      724 :       724 = 1.0 to 1   .bash_history
+       64 :        64 = 1.0 to 1   .gitconfig
+        0 :         0 = 1.0 to 1   .idlerc
+        0 :         0 = 1.0 to 1   .oracle_jre_usage
+        0 :         0 = 1.0 to 1   3D Objects
+        0 :         0 = 1.0 to 1   aaa
+        0 :         0 = 1.0 to 1   Contacts
+        0 :         0 = 1.0 to 1   Desktop
+        0 :         0 = 1.0 to 1   Documents
+        0 :         0 = 1.0 to 1   Downloads
+        0 :         0 = 1.0 to 1   Favorites
+        0 :         0 = 1.0 to 1   Links
+        0 :         0 = 1.0 to 1   Music
+        0 :         0 = 1.0 to 1   OneDrive
+        0 :         0 = 1.0 to 1   Pictures
+        0 :         0 = 1.0 to 1   ping
+        0 :         0 = 1.0 to 1   Saved Games
+        0 :         0 = 1.0 to 1   Searches
+        0 :         0 = 1.0 to 1   Videos
+
+Of 39 files within 1 directories
+0 are compressed and 39 are not compressed.
+7,361,320 total bytes of data are stored in 7,361,320 bytes.
+The compression ratio is 1.0 to 1.
