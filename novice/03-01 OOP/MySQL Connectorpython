@@ -1,0 +1,164 @@
+Konektor MySQL/Panduan Pengembang Python
+Abstrak
+
+Manual ini menjelaskan cara menginstal dan mengkonfigurasi MySQL Connector/Python, driver Python mandiri untuk berkomunikasi dengan server MySQL, dan cara menggunakannya untuk mengembangkan aplikasi database.
+
+MySQL Connector/Python 8.0 sangat disarankan untuk digunakan dengan MySQL Server 8.0, 5.7, dan 5.6. Harap tingkatkan ke Konektor MySQL/Python 8.0.
+
+Untuk catatan yang merinci perubahan di setiap rilis Connector/Python, lihat Catatan Rilis Konektor MySQL/Python .
+
+Untuk informasi hukum, lihat Pemberitahuan Hukum .
+
+Untuk bantuan dalam menggunakan MySQL, silakan kunjungi Forum MySQL , di mana Anda dapat mendiskusikan masalah Anda dengan pengguna MySQL lainnya.
+
+Informasi perizinan.  Produk ini mungkin termasuk perangkat lunak pihak ketiga, yang digunakan di bawah lisensi. MySQL Connector/Python 2.2 Informasi Lisensi Komunitas Panduan Pengguna memiliki informasi tentang lisensi yang terkait dengan rilis komunitas MySQL Connector/Python hingga dan termasuk versi 2.2. MySQL Connector/Python 2.2 Informasi Lisensi Komersial Panduan Pengguna memiliki informasi tentang lisensi yang berkaitan dengan rilis komersial Konektor MySQL/Python hingga dan termasuk versi 2.2. Panduan Pengguna Informasi Lisensi Komunitas MySQL Connector/Python 8.0memiliki informasi tentang lisensi yang berkaitan dengan rilis komunitas MySQL Connector/Python dalam seri rilis 8.0. Panduan Pengguna Informasi Lisensi Komersial MySQL Connector/Python 8.0 memiliki informasi tentang lisensi yang berkaitan dengan rilis komersial Konektor MySQL/Python dalam seri rilis 8.0.
+
+Dokumen dibuat pada: 2022-08-16 (revisi: 73963)
+
+Daftar isi
+
+Kata Pengantar dan Pemberitahuan Hukum
+1 Pengantar Konektor MySQL/Python
+2 Pedoman untuk Pengembang Python
+3 Konektor/Versi Python
+4 Konektor/Instalasi Python
+5 Contoh Pengkodean Konektor/Python
+6 Tutorial Konektor/Python
+7 Pembentukan Koneksi Konektor/Python
+8 Ekstensi Konektor/Python C
+9 Konektor/Python Topik Lainnya
+Referensi 10 Konektor/Python API
+11 Referensi API Ekstensi Konektor/Python C
+Indeks
+
+
+
+
+
+
+  
+
+Kami sebelumnya membuat blog tentang menggunakan Python untuk terhubung ke server MariaDB menggunakan paket MySQL Python. Pada Juni 2020, MariaDB membuat rilis Konektor/Python pertama yang tersedia secara umum. Kami telah menyegarkan blog ini untuk mencerminkan teknologi terbaru. Jika Anda membutuhkan blog lama, Anda dapat menemukannya di sini .
+
+Anda dapat menggunakan bahasa pemrograman populer Python untuk mengelola data yang disimpan di MariaDB Platform , termasuk MariaDB Server, MariaDB MaxScale, dan MariaDB SkySQL . Berikut adalah semua yang perlu Anda ketahui tentang menghubungkan ke Platform MariaDB dari Python untuk mengambil, memperbarui, dan memasukkan informasi.
+
+Mempersiapkan dan Menginstal
+Anda akan memerlukan akses ke Server MariaDB. Kami merekomendasikan salah satu dari dua metode ini:
+1. Unduh MariaDB Server di perangkat keras Anda sendiri. Lihat Panduan Penerapan kami untuk petunjuk langkah demi langkah dalam dokumentasi kami.
+
+ATAU
+
+2. Terapkan Platform MariaDB, yang mencakup MariaDB Enterprise Server, menggunakan MariaDB SkySQL. Lihat dokumentasi kami untuk meluncurkan layanan database dalam hitungan menit.
+
+Jika Anda ingin mencoba integrasi Python dengan MariaDB tetapi Anda tidak memiliki database untuk dimainkan, Anda dapat menggunakan database contoh karyawan yang populer .
+
+MariaDB menyediakan dukungan Python melalui MariaDB Connector/Python, yang tersedia melalui Python Package Index. Untuk menginstal, gunakan PIP:
+
+$pip3 instal mariadb
+Menghubungkan ke Server MariaDB
+1. Untuk terhubung ke MariaDB Server menggunakan MariaDB Connector/Python, Anda harus mengimpornya terlebih dahulu, sama seperti modul lainnya:import mariadb
+
+2. Selanjutnya, buat koneksi database dengan fungsi connect(). Fungsi ini mengambil serangkaian argumen bernama yang menentukan kredensial klien Anda, seperti nama pengguna, host, kata sandi. Jika Anda menggunakan instans database di SkySQL, informasi ini disediakan di halaman Detail Layanan untuk instans database Anda.
+
+Koneksi memberi Anda antarmuka untuk mengonfigurasi koneksi aplikasi Anda ke Server MariaDB.
+
+3. Terakhir, panggil cursor()metode pada koneksi untuk mengambil kursor.
+
+Kursor memberi Anda antarmuka untuk berinteraksi dengan Server, seperti menjalankan kueri SQL dan mengelola transaksi.
+
+# Modul Impor 
+impor mariadb
+ import sys
+
+# Hubungkan ke Platform MariaDB 
+coba :
+    samb = mariadb.koneksi(
+        pengguna= "db_pengguna" ,
+        kata sandi = "db_user_passwd" ,
+        tuan rumah= "192.0.2.1" ,
+        pelabuhan = 3306 ,
+        database= "karyawan"
+
+    )
+kecuali mariadb.Error sebagai e:
+    print( f"Kesalahan saat menghubungkan ke Platform MariaDB: {e} " )
+    sys.keluar(1)
+
+# Dapatkan Kursor 
+skr = conn.cursor()
+Mengambil Data
+Setelah Anda memiliki kode awal di tempat Anda dapat mulai bekerja dengan data. Hal pertama yang harus Anda lakukan adalah mencoba mengambil informasi dari database. Berikut adalah kode untuk kueri terhadap database karyawan:
+
+cur.execute(
+     "PILIH first_name,last_name FROM employee WHERE first_name=?" ,
+    (some_name,))
+MariaDB Connector/Python menggunakan pernyataan yang disiapkan, membersihkan dan memasukkan nilai dari tupel ke posisi tanda tanya (?). Ini lebih aman daripada memasukkan melalui f-string atau penentu format saat bekerja dengan informasi yang diberikan pengguna.
+
+Hasil kueri disimpan dalam daftar di objek kursor. Untuk melihat hasilnya, Anda dapat mengulang kursor.
+
+# Cetak Hasil-set 
+untuk (nama_pertama, nama_belakang) di skr:
+    print( f"Nama Depan: {first_name} , Nama Belakang: {last_name}")
+Setiap baris dilewatkan dari kursor sebagai tupel yang berisi kolom dalam SELECTpernyataan.
+
+Menambahkan Data
+Menggunakan execute()metode yang sama dengan INSERTpernyataan, Anda dapat menambahkan baris ke tabel.
+
+cursor.execute(
+    "MASUKKAN KE karyawan (nama_depan,nama_belakang) NILAI (?, ?)" ,
+    (nama depan Nama Belakang))
+Secara default, MariaDB Connector/Python mengaktifkan auto-commit. Jika Anda ingin mengelola transaksi Anda secara manual, hanya melakukan ketika Anda siap, Anda dapat menonaktifkannya dengan mengatur autocommitatribut pada koneksi ke False.
+
+# Nonaktifkan Auto-Commit
+conn.autocommit = Salah
+Setelah ini selesai, Anda dapat melakukan dan mengembalikan transaksi menggunakan metode commit()and rollback(). Server MariaDB memungkinkan Anda untuk menjalankan beberapa transaksi bersamaan pada tabel yang sama tanpa menguncinya saat Anda menggunakan mesin penyimpanan InnoDB.
+
+Saat menyisipkan baris, Anda mungkin ingin menemukan Kunci Utama dari baris yang terakhir disisipkan saat dibuat, seperti halnya nilai yang bertambah secara otomatis. Anda dapat mengambil ini menggunakan lastrowid()metode pada kursor.
+
+Memperbarui dan menghapus baris dilakukan dengan cara yang sama seperti menyisipkannya. Satu-satunya perbedaan adalah pada kueri yang digunakan.
+
+Menangkap Pengecualian
+Untuk setiap tindakan SQL Anda (meminta, memperbarui, menghapus, atau menyisipkan catatan), Anda harus mencoba untuk menjebak kesalahan, sehingga Anda dapat memverifikasi bahwa tindakan Anda sedang dijalankan seperti yang diharapkan dan Anda tahu tentang masalah apa pun yang terjadi. Untuk menjebak kesalahan, gunakan kelas Kesalahan:
+
+coba :
+    kursor.execute( "beberapa permintaan MariaDB" ))
+ kecuali mariadb.Error sebagai e:
+    print( f"Kesalahan: {e} " )
+Jika kueri dalam tryklausa kode di atas gagal, Server MariaDB mengembalikan pengecualian SQL, yang ditangkap dalam pengecualian dan dicetak ke stdout. Praktik terbaik pemrograman untuk menangkap pengecualian ini sangat penting saat Anda bekerja dengan database, karena Anda perlu memastikan integritas informasi.
+
+Setelah Anda selesai bekerja dengan database, pastikan Anda menutup koneksi ini untuk menghindari koneksi yang tidak digunakan tetap terbuka dan dengan demikian membuang-buang sumber daya. Anda dapat menutup koneksi dengan close()metode:
+
+# Tutup Koneksi 
+conn.close()
+Jika Anda menggunakan SkySQL untuk bereksperimen, Anda mungkin ingin menghapus layanan database Anda untuk berhenti menimbulkan biaya.
+
+Script Lengkap
+Beginilah cara mudah dan lugas untuk menghubungkan kode Python Anda ke database MariaDB. Berikut adalah bagaimana skrip lengkap akan terlihat seperti:
+
+#!/usr/bin/python  
+impor mariadb
+
+samb = mariadb.koneksi(
+    pengguna= "db_pengguna" ,
+    kata sandi = "db_user_passwd" ,
+    host= "host lokal" ,
+    database= "karyawan" )
+skr = penghubung.kursor()
+
+#retrieving information  
+some_name = "Georgi"  
+cur.execute( "SELECT first_name,last_name FROM employee WHERE first_name=?" , (some_name,))
+
+untuk first_name, last_name di skr:
+    print(f"Nama depan: {first_name}, Nama belakang: {last_name}")
+    
+#masukkan informasi  
+coba :
+    cur.execute( "INSERT INTO employee (first_name,last_name) VALUES (?, ?)" , ( "Maria" , "DB" )) 
+ kecuali mariadb.Error as e:
+    print( f"Kesalahan: {e} " )
+
+samb.komit()
+print( f"ID Terakhir Dimasukkan: {cur.lastrowid} " )
+    
+samb.tutup()

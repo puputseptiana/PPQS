@@ -1,0 +1,583 @@
+Model basis data
+Sebuah model database adalah jenis model data yang menentukan struktur logis dari database . Ini pada dasarnya menentukan cara data dapat disimpan, diatur, dan dimanipulasi. Contoh paling populer dari model database adalah model relasional , yang menggunakan format berbasis tabel.
+
+
+Isi
+1	Jenis
+2	Hubungan dan fungsi
+3	Model datar
+4	Model data awal
+4.1	Model hierarkis
+4.2	Model jaringan
+4.3	Model file terbalik
+5	Model relasional
+5.1	Model dimensi
+6	Model database pasca-relasional
+6.1	Model grafik
+6.2	Model multinilai
+6.3	Model database berorientasi objek
+7	Lihat juga
+8	Referensi
+Jenis 
+Model data logis umum untuk database meliputi:
+
+Model basis data hierarkis
+Ini adalah bentuk tertua dari model basis data. Ini dikembangkan oleh IBM untuk IMS (Sistem Manajemen Informasi). Ini adalah satu set data terorganisir dalam struktur pohon. Catatan DB adalah pohon yang terdiri dari banyak kelompok yang disebut segmen. Ini menggunakan hubungan satu ke banyak. Akses data juga dapat diprediksi.
+Model jaringan
+Model relasional
+Model hubungan entitas
+Model hubungan entitas yang disempurnakan
+Model objek
+Model dokumen
+Model entitas–atribut–nilai
+Skema bintang
+Sebuah database objek-relasional menggabungkan dua struktur terkait.
+
+Model data fisik meliputi:
+
+Indeks terbalik
+File datar
+Model lainnya termasuk:
+
+Model korelasional
+Model multidimensi
+Model multinilai
+Model semantik
+basis data XML
+Grafik bernama
+Toko tiga
+Hubungan dan fungsi 
+Sistem manajemen basis data yang diberikan dapat menyediakan satu atau lebih model. Struktur optimal tergantung pada organisasi alami dari data aplikasi, dan pada persyaratan aplikasi, yang meliputi tingkat transaksi (kecepatan), keandalan, pemeliharaan, skalabilitas, dan biaya. Sebagian besar sistem manajemen basis data dibangun di sekitar satu model data tertentu, meskipun ada kemungkinan produk menawarkan dukungan untuk lebih dari satu model.
+
+Berbagai model data fisik dapat mengimplementasikan model logis yang diberikan. Sebagian besar perangkat lunak basis data akan menawarkan kepada pengguna beberapa tingkat kontrol dalam menyetel implementasi fisik, karena pilihan yang dibuat memiliki pengaruh yang signifikan terhadap kinerja.
+
+Model bukan hanya cara menyusun data: model juga mendefinisikan serangkaian operasi yang dapat dilakukan pada data. [1] Model relasional, misalnya, mendefinisikan operasi seperti pilih ( project ) dan join . Meskipun operasi ini mungkin tidak eksplisit dalam bahasa kueri tertentu , operasi ini memberikan dasar di mana bahasa kueri dibangun.
+
+Model datar 
+
+Model File Datar
+Artikel utama: Database file datar dan Spreadsheet
+Itu datar (atau tabel) terdiri dari satu larik elemen data dua dimensi , di mana semua anggota kolom tertentu diasumsikan memiliki nilai yang sama, dan semua anggota baris diasumsikan terkait satu sama lain. Misalnya, kolom untuk nama dan kata sandi yang mungkin digunakan sebagai bagian dari database keamanan sistem. Setiap baris akan memiliki kata sandi khusus yang terkait dengan pengguna individu. Kolom tabel sering memiliki tipe yang terkait dengannya, mendefinisikannya sebagai data karakter, informasi tanggal atau waktu, bilangan bulat, atau angka floating point. Format tabel ini merupakan pendahulu dari model relasional.
+
+Model data awal
+Model-model ini populer pada 1960-an, 1970-an, tetapi saat ini dapat ditemukan terutama di sistem lama . Mereka dicirikan terutama dengan menjadi navigasi dengan koneksi yang kuat antara representasi logis dan fisik mereka, dan kekurangan dalam kemandirian data .
+
+Model hierarkis 
+
+Model Hirarki
+Artikel utama: Model hierarki
+Dalam model hierarkis , data diatur ke dalam struktur seperti pohon , yang menyiratkan induk tunggal untuk setiap catatan. Bidang pengurutan menyimpan catatan saudara dalam urutan tertentu. Struktur hierarkis banyak digunakan dalam sistem manajemen basis data mainframe awal, seperti Sistem Manajemen Informasi (IMS) oleh IBM , dan sekarang menggambarkan struktur dokumen XML . Struktur ini memungkinkan hubungan satu-ke-banyak antara dua jenis data. Struktur ini sangat efisien untuk menggambarkan banyak hubungan di dunia nyata; resep, daftar isi, urutan paragraf/ayat, informasi bersarang dan diurutkan.
+
+Hirarki ini digunakan sebagai urutan fisik catatan dalam penyimpanan. Akses rekaman dilakukan dengan menavigasi ke bawah melalui struktur data menggunakan pointer yang dikombinasikan dengan akses berurutan. Karena itu, struktur hierarki tidak efisien untuk operasi basis data tertentu ketika jalur penuh (sebagai lawan dari tautan ke atas dan bidang pengurutan) juga tidak disertakan untuk setiap catatan. Keterbatasan tersebut telah dikompensasikan dalam versi IMS selanjutnya dengan hierarki logis tambahan yang dikenakan pada hierarki fisik dasar.
+
+Model jaringan 
+
+Model Jaringan
+Artikel utama: Model jaringan
+Model jaringan memperluas struktur hierarki, memungkinkan hubungan banyak-ke-banyak dalam struktur seperti pohon yang memungkinkan banyak orang tua. Itu paling populer sebelum digantikan oleh model relasional, dan didefinisikan oleh spesifikasi CODASYL .
+
+Model jaringan mengatur data menggunakan dua konsep dasar, yang disebut record dan set . Catatan berisi bidang (yang dapat diatur secara hierarkis, seperti dalam bahasa pemrograman COBOL ). Himpunan (jangan bingung dengan himpunan matematika) mendefinisikan hubungan satu-ke-banyak antara catatan: satu pemilik, banyak anggota. Sebuah record dapat menjadi pemilik di sejumlah set, dan anggota di sejumlah set.
+
+Satu set terdiri dari daftar tertaut melingkar di mana satu jenis rekaman, pemilik set atau induk, muncul satu kali di setiap lingkaran, dan jenis rekaman kedua, bawahan atau anak, mungkin muncul beberapa kali di setiap lingkaran. Dengan cara ini hierarki dapat dibuat antara dua jenis record, misalnya, tipe A adalah pemilik B. Pada saat yang sama, himpunan lain dapat didefinisikan di mana B adalah pemilik A. Jadi semua himpunan terdiri dari graf berarah umum (kepemilikan mendefinisikan arah), atau membangun jaringan . Akses ke rekaman dapat dilakukan secara berurutan (biasanya di setiap jenis rekaman) atau dengan navigasi dalam daftar tertaut melingkar.
+
+Model jaringan mampu merepresentasikan redundansi dalam data lebih efisien daripada model hierarkis, dan bisa ada lebih dari satu jalur dari simpul leluhur ke turunan. Operasi model jaringan adalah gaya navigasi: program mempertahankan posisi saat ini, dan menavigasi dari satu catatan ke catatan lain dengan mengikuti hubungan di mana catatan berpartisipasi. Catatan juga dapat ditemukan dengan memberikan nilai kunci.
+
+Meskipun bukan merupakan fitur penting dari model, database jaringan umumnya menerapkan hubungan yang ditetapkan melalui pointer yang secara langsung mengarahkan lokasi record pada disk. Ini memberikan kinerja pengambilan yang sangat baik, dengan mengorbankan operasi seperti pemuatan basis data dan reorganisasi.
+
+Produk DBMS populer yang memanfaatkannya adalah Cincom Systems 'Total dan Culinet 's IDMS . IDMS memperoleh basis pelanggan yang cukup besar; pada 1980-an, ia mengadopsi model relasional dan SQL di samping alat dan bahasa aslinya.
+
+Sebagian besar database objek (ditemukan pada 1990-an) menggunakan konsep navigasi untuk menyediakan navigasi cepat di seluruh jaringan objek, umumnya menggunakan pengidentifikasi objek sebagai penunjuk "pintar" ke objek terkait. Objectivity/DB , misalnya, mengimplementasikan hubungan bernama satu-ke-satu, satu-ke-banyak, banyak-ke-satu, dan banyak-ke-banyak bernama yang dapat melintasi database. Banyak database objek juga mendukung SQL , menggabungkan kekuatan kedua model.
+
+Model file terbalik 
+Artikel utama: Indeks terbalik
+Dalam file terbalik atau indeks terbalik , konten data digunakan sebagai kunci dalam tabel pencarian, dan nilai dalam tabel adalah penunjuk ke lokasi setiap instance item konten tertentu. Ini juga merupakan struktur logis dari indeks basis data kontemporer , yang mungkin hanya menggunakan konten dari kolom tertentu dalam tabel pencarian. Model data file terbalik dapat menempatkan indeks dalam satu set file di sebelah file database datar yang ada, untuk secara langsung mengakses catatan yang diperlukan dalam file ini secara efisien.
+
+Penting untuk menggunakan model data ini adalah ADABAS DBMS Software AG , yang diperkenalkan pada tahun 1970. ADABAS telah memperoleh basis pelanggan yang cukup besar dan ada serta didukung hingga saat ini. Pada 1980-an telah mengadopsi model relasional dan SQL di samping alat dan bahasa aslinya.
+
+Database berorientasi dokumen Clusterpoint menggunakan model pengindeksan terbalik untuk menyediakan pencarian teks lengkap yang cepat untuk objek data XML atau JSON misalnya.
+
+Model relasional 
+
+Dua tabel dengan hubungan
+Artikel utama: Model relasional
+Model relasional diperkenalkan oleh EF Codd pada tahun 1970 [2] sebagai cara untuk membuat sistem manajemen database lebih independen dari aplikasi tertentu. Ini adalah model matematika yang didefinisikan dalam hal logika predikat dan teori himpunan , dan implementasinya telah digunakan oleh sistem mainframe, midrange dan mikrokomputer.
+
+Produk yang umumnya disebut sebagai database relasional sebenarnya menerapkan model yang hanya merupakan pendekatan terhadap model matematika yang didefinisikan oleh Codd. Tiga istilah kunci digunakan secara luas dalam model basis data relasional: relasi , atribut , dan domain . Relasi adalah tabel yang memiliki kolom dan baris. Kolom bernama dari relasi disebut atribut, dan domain adalah himpunan nilai yang boleh diambil oleh atribut.
+
+Struktur data dasar dari model relasional adalah tabel, di mana informasi tentang entitas tertentu (misalnya, seorang karyawan) direpresentasikan dalam baris (juga disebut tupel ) dan kolom. Dengan demikian, " hubungan " dalam "database relasional" mengacu pada berbagai tabel dalam database; sebuah relasi adalah sekumpulan tupel. Kolom menyebutkan berbagai atribut entitas (misalnya, nama karyawan, alamat atau nomor telepon), dan baris adalah contoh aktual dari entitas (karyawan tertentu) yang diwakili oleh relasi. Akibatnya, setiap tupel tabel karyawan mewakili berbagai atribut dari satu karyawan.
+
+Semua relasi (dan, dengan demikian, tabel) dalam database relasional harus mematuhi beberapa aturan dasar untuk memenuhi syarat sebagai relasi. Pertama, urutan kolom tidak penting dalam sebuah tabel. Kedua, tidak boleh ada tupel atau baris yang identik dalam sebuah tabel. Dan ketiga, setiap tuple akan berisi satu nilai untuk setiap atributnya.
+
+Database relasional berisi beberapa tabel, masing-masing mirip dengan yang ada di model database "datar". Salah satu kekuatan model relasional adalah, pada prinsipnya, setiap nilai yang terjadi pada dua record yang berbeda (milik tabel yang sama atau tabel yang berbeda), menyiratkan hubungan antara dua record tersebut. Namun, untuk menegakkan batasan integritas eksplisit , hubungan antara catatan dalam tabel juga dapat didefinisikan secara eksplisit, dengan mengidentifikasi atau tidak mengidentifikasi hubungan induk-anak yang ditandai dengan menetapkan kardinalitas (1:1, (0)1:M, M:M ). Tabel juga dapat memiliki satu atribut yang ditunjuk atau satu set atribut yang dapat bertindak sebagai "kunci", yang dapat digunakan untuk mengidentifikasi secara unik setiap tupel dalam tabel.
+
+Kunci yang dapat digunakan untuk mengidentifikasi baris dalam tabel secara unik disebut kunci utama. Kunci biasanya digunakan untuk menggabungkan atau menggabungkan data dari dua atau lebih tabel. Misalnya, tabel Karyawan mungkin berisi kolom bernama Lokasi yang berisi nilai yang cocok dengan kunci tabel Lokasi . Kunci juga penting dalam pembuatan indeks, yang memfasilitasi pengambilan data dengan cepat dari tabel besar. Setiap kolom dapat menjadi kunci, atau beberapa kolom dapat dikelompokkan bersama menjadi kunci majemuk. Tidak perlu mendefinisikan semua kunci terlebih dahulu; kolom dapat digunakan sebagai kunci meskipun awalnya tidak dimaksudkan sebagai kunci.
+
+Kunci yang memiliki arti dunia nyata eksternal (seperti nama seseorang, ISBN buku , atau nomor seri mobil) terkadang disebut kunci "alami". Jika tidak ada kunci alami yang cocok (pikirkan banyak orang bernama Brown ), kunci arbitrer atau pengganti dapat diberikan (seperti dengan memberikan nomor ID karyawan). Dalam praktiknya, sebagian besar database memiliki kunci yang dihasilkan dan kunci alami, karena kunci yang dihasilkan dapat digunakan secara internal untuk membuat tautan di antara baris yang tidak dapat terputus, sedangkan kunci alami dapat digunakan, kurang andal, untuk pencarian dan untuk integrasi dengan database lain. (Misalnya, catatan dalam dua database yang dikembangkan secara independen dapat dicocokkan dengan nomor jaminan sosial , kecuali jika nomor jaminan sosial salah, hilang, atau telah berubah.
+
+Bahasa query yang paling umum digunakan dengan model relasional adalah Structured Query Language ( SQL ).
+
+Model dimensi 
+Model dimensional adalah adaptasi khusus dari model relasional yang digunakan untuk merepresentasikan data dalam gudang data sedemikian rupa sehingga data dapat dengan mudah diringkas menggunakan pemrosesan analitik online, atau OLAP .pertanyaan. Dalam model dimensi, skema database terdiri dari satu tabel besar fakta yang dijelaskan menggunakan dimensi dan ukuran. Dimensi memberikan konteks fakta (seperti siapa yang berpartisipasi, kapan dan di mana itu terjadi, dan jenisnya) dan digunakan dalam kueri untuk mengelompokkan fakta terkait bersama-sama. Dimensi cenderung terpisah dan seringkali hierarkis; misalnya, lokasi mungkin mencakup gedung, negara bagian, dan negara. Ukuran adalah kuantitas yang menggambarkan fakta, seperti pendapatan. Penting bahwa ukuran dapat diagregasi secara bermakna—misalnya, pendapatan dari lokasi yang berbeda dapat ditambahkan bersama-sama.
+
+Dalam kueri OLAP, dimensi dipilih dan fakta dikelompokkan dan digabungkan bersama untuk membuat ringkasan.
+
+Model dimensi sering diimplementasikan di atas model relasional menggunakan skema bintang , terdiri dari satu tabel yang sangat dinormalisasi yang berisi fakta-fakta, dan tabel denormalisasi sekitarnya yang berisi setiap dimensi. Implementasi fisik alternatif, yang disebut skema kepingan salju , menormalkan hierarki multi-level dalam dimensi menjadi beberapa tabel.
+
+Sebuah gudang data dapat berisi beberapa skema dimensi yang berbagi tabel dimensi, memungkinkan mereka untuk digunakan bersama-sama. Muncul dengan satu set standar dimensi merupakan bagian penting dari pemodelan dimensi .
+
+Performanya yang tinggi telah menjadikan model dimensional sebagai struktur database paling populer untuk OLAP.
+
+Model database pasca-relasional 
+Produk yang menawarkan model data yang lebih umum daripada model relasional terkadang diklasifikasikan sebagai pasca-relasional . [3] Istilah alternatif termasuk "basis data hibrida", "RDBMS yang disempurnakan dengan objek" dan lainnya. Model data dalam produk tersebut menggabungkan hubungan tetapi tidak dibatasi oleh Prinsip Informasi EF Codd , yang mengharuskan
+
+semua informasi dalam database harus ditampilkan secara eksplisit dalam hal nilai dalam hubungan dan tidak dengan cara lain
+
+—  [4]
+Beberapa dari perluasan model relasional ini mengintegrasikan konsep-konsep dari teknologi yang mendahului model relasional. Misalnya, mereka mengizinkan representasi dari grafik berarah dengan pohon pada node. Perusahaan Jerman mengimplementasikan konsep ini dalam GraphDB - nya .
+
+Beberapa produk pasca-relasional memperluas sistem relasional dengan fitur non-relasional. Lainnya tiba di banyak tempat yang sama dengan menambahkan fitur relasional ke sistem pra-relasional. Paradoksnya, ini memungkinkan produk yang secara historis pra-relasional, seperti PICK dan MUMPS , untuk membuat klaim yang masuk akal sebagai pasca-relasional.
+
+Resource space model (RSM) adalah model data non-relasional berdasarkan klasifikasi multidimensi.[5]
+
+Model grafik 
+Artikel utama: Basis data grafik
+Database grafik memungkinkan struktur yang lebih umum daripada database jaringan; setiap node dapat terhubung ke node lain.
+
+Model multinilai 
+Artikel utama: MultiNilai
+Basis data multinilai adalah data "kental", di mana mereka dapat menyimpan dengan cara yang persis sama seperti basis data relasional, tetapi mereka juga mengizinkan tingkat kedalaman yang hanya dapat diperkirakan oleh model relasional menggunakan sub-tabel. Ini hampir identik dengan cara XML mengekspresikan data, di mana bidang/atribut tertentu dapat memiliki beberapa jawaban yang benar secara bersamaan. Multinilai dapat dianggap sebagai bentuk XML terkompresi.
+
+Contohnya adalah faktur, yang dalam data multinilai atau relasional dapat dilihat sebagai (A) Tabel Header Faktur - satu entri per faktur, dan (B) Tabel Detail Faktur - satu entri per item baris. Dalam model multinilai, kami memiliki opsi untuk menyimpan data seperti pada tabel, dengan tabel tertanam untuk mewakili detail: (A) Tabel Faktur - satu entri per faktur, tidak diperlukan tabel lain.
+
+Keuntungannya adalah atomitas Faktur (konseptual) dan Faktur (representasi data) adalah satu-ke-satu. Ini juga menghasilkan lebih sedikit pembacaan, lebih sedikit masalah integritas referensial, dan penurunan dramatis dalam perangkat keras yang diperlukan untuk mendukung volume transaksi tertentu.
+
+Model database berorientasi objek 
+
+Model Berorientasi Objek
+Artikel utama: Model objek–relasional dan Model objek
+Pada 1990-an, paradigma pemrograman berorientasi objek diterapkan pada teknologi basis data, menciptakan model basis data baru yang dikenal sebagai basis data objek . Ini bertujuan untuk menghindari ketidakcocokan impedansi objek-relasional – biaya konversi informasi antara representasinya dalam database (misalnya sebagai baris dalam tabel) dan representasinya dalam program aplikasi (biasanya sebagai objek). Lebih jauh lagi, sistem tipe yang digunakan dalam aplikasi tertentu dapat didefinisikan secara langsung dalam database, memungkinkan database untuk menerapkan invarian integritas data yang sama. Database objek juga memperkenalkan ide-ide kunci pemrograman objek, seperti enkapsulasi dan polimorfisme, ke dalam dunia database.
+
+Berbagai cara tersebut telah dicoba [ oleh siapa? ] untuk menyimpan objek dalam database. Beberapa [ yang? ] produk telah mendekati masalah dari akhir pemrograman aplikasi, dengan membuat objek dimanipulasi oleh program terus- menerus . Ini biasanya memerlukan penambahan beberapa jenis bahasa kueri, karena bahasa pemrograman konvensional tidak memiliki kemampuan untuk menemukan objek berdasarkan konten informasinya. Lainnya [ yang? ]telah menyerang masalah dari akhir database, dengan mendefinisikan model data berorientasi objek untuk database, dan mendefinisikan bahasa pemrograman database yang memungkinkan kemampuan pemrograman penuh serta fasilitas query tradisional.
+
+Basis data objek menderita karena kurangnya standarisasi: meskipun standar didefinisikan oleh ODMG , mereka tidak pernah diterapkan dengan cukup baik untuk memastikan interoperabilitas antar produk. Namun demikian, database objek telah berhasil digunakan dalam banyak aplikasi: biasanya aplikasi khusus seperti database teknik atau database biologi molekuler daripada pemrosesan data komersial arus utama. Namun, ide basis data objek diambil oleh vendor relasional dan memengaruhi ekstensi yang dibuat untuk produk ini dan memang untuk bahasa SQL .
+
+Sebuah alternatif untuk menerjemahkan antara objek dan database relasional adalah dengan menggunakan perpustakaan pemetaan objek-relasional (ORM).
+
+Lihat juga 
+Desain basis data
+Referensi 
+
+Wikimedia Commons memiliki media mengenai Model basis data .
+ Elmasri, Ramez; Navathe, Shamkant. Dasar-dasar sistem database (Edisi ketujuh). p. 33. ISBN 9780133970777.
+ EF Codd (1970). "Model data relasional untuk bank data bersama yang besar". Dalam: Komunikasi arsip ACM . Vol 13. Edisi 6 (Juni 1970). hal.377-387.
+ Memperkenalkan database oleh Stephen Chu, dalam Conrick, M. (2006) Informatika kesehatan: mengubah perawatan kesehatan dengan teknologi , Thomson, ISBN 0-17-012731-1 , hal. 69. 
+Tanggal, CJ (1 Juni 1999). "Kapan ekstensi bukan ekstensi?" . Perusahaan Cerdas . 2 (8).
+ Zhuge, H. (2008). Model Ruang Sumber Daya Web . Seri Buku Rekayasa Sistem Informasi Web dan Teknologi Internet. Jil. 4. Pegas. ISBN 978-0-387-72771-4.
+
+
+
+
+
+Normalisasi basis data
+Normalisasi basis data adalah proses penataan basis data relasional sesuai dengan serangkaian yang disebut bentuk normal untuk mengurangi redundansi data dan meningkatkan integritas data . Ini pertama kali diusulkan oleh Edgar F. Codd sebagai bagian dari model relasionalnya .
+
+Normalisasi memerlukan pengorganisasian kolom (atribut) dan tabel (relasi) dari database untuk memastikan bahwa ketergantungan mereka ditegakkan dengan benar oleh batasan integritas database. Hal ini dicapai dengan menerapkan beberapa aturan formal baik dengan proses sintesis (membuat desain database baru) atau dekomposisi (meningkatkan desain database yang sudah ada).
+
+
+Isi
+1	Tujuan
+1.1	Minimalkan desain ulang saat memperluas struktur database
+2	Bentuk normal
+3	Contoh normalisasi langkah demi langkah
+3.1	Data awal
+3.2	Memuaskan 1NF
+3.3	Memuaskan 2NF
+3.4	3NF yang memuaskan
+3.5	EKNF yang memuaskan
+3.6	Memuaskan 4NF
+3.7	ETNF yang memuaskan
+3.8	5NF yang memuaskan
+3.9	Memuaskan DKNF
+3.10	Memuaskan 6NF
+4	Lihat juga
+5	Catatan dan referensi
+6	Bacaan lebih lanjut
+7	Tautan eksternal
+Tujuan 
+Tujuan dasar dari bentuk normal pertama yang didefinisikan oleh Codd pada tahun 1970 adalah untuk mengizinkan data ditanyakan dan dimanipulasi menggunakan "subbahasa data universal" yang didasarkan pada logika orde pertama . [1] ( SQL adalah contoh dari sub-bahasa data, meskipun salah satu yang dianggap Codd sebagai cacat serius. [2] )
+
+Tujuan dari normalisasi di luar 1NF (first normal form) dikemukakan oleh Codd sebagai berikut:
+
+Untuk membebaskan kumpulan relasi dari ketergantungan penyisipan, pembaruan, dan penghapusan yang tidak diinginkan.
+Untuk mengurangi kebutuhan untuk merestrukturisasi kumpulan relasi, ketika tipe data baru diperkenalkan, dan dengan demikian meningkatkan masa pakai program aplikasi.
+Untuk membuat model relasional lebih informatif bagi pengguna.
+Untuk membuat kumpulan relasi netral terhadap statistik kueri, di mana statistik ini dapat berubah seiring berjalannya waktu.
+—  EF Codd, "Normalisasi Lebih Lanjut dari Model Relasional Basis Data" [3]
+
+Sebuah anomali pembaruan . Karyawan 519 ditampilkan memiliki alamat yang berbeda pada catatan yang berbeda.
+
+Anomali penyisipan . Sampai anggota fakultas baru, Dr. Newsome, ditugaskan untuk mengajar setidaknya satu mata kuliah, rincian mereka tidak dapat direkam.
+
+Anomali penghapusan . Semua informasi tentang Dr. Giddens hilang jika mereka untuk sementara berhenti ditugaskan ke kursus apa pun.
+Ketika upaya dilakukan untuk memodifikasi (memperbarui, menyisipkan, atau menghapus dari) suatu relasi, efek samping yang tidak diinginkan berikut mungkin timbul dalam relasi yang belum cukup dinormalisasi:
+
+Perbarui anomali. Informasi yang sama dapat diekspresikan pada beberapa baris; oleh karena itu pembaruan pada relasi dapat mengakibatkan inkonsistensi logis. Misalnya, setiap record dalam relasi "Keterampilan Karyawan" mungkin berisi ID Karyawan, Alamat Karyawan, dan Keahlian; sehingga perubahan alamat untuk karyawan tertentu mungkin perlu diterapkan ke beberapa catatan (satu untuk setiap keterampilan). Jika pembaruan hanya berhasil sebagian – alamat karyawan diperbarui pada beberapa catatan tetapi tidak pada yang lain – maka relasi dibiarkan dalam keadaan tidak konsisten. Secara khusus, relasi tersebut memberikan jawaban yang bertentangan atas pertanyaan tentang alamat karyawan tertentu tersebut.
+Anomali penyisipan. Ada keadaan di mana fakta-fakta tertentu tidak dapat dicatat sama sekali. Misalnya, setiap record dalam relasi "Fakultas dan Kursusnya" mungkin berisi ID Fakultas, Nama Fakultas, Tanggal Perekrutan Fakultas, dan Kode Kursus. Oleh karena itu, rincian setiap anggota fakultas yang mengajar setidaknya satu mata kuliah dapat dicatat, tetapi seorang anggota fakultas yang baru direkrut yang belum ditugaskan untuk mengajar mata kuliah apa pun tidak dapat dicatat, kecuali dengan menyetel Kode Mata kuliah ke null .
+Anomali penghapusan. Dalam keadaan tertentu, penghapusan data yang mewakili fakta tertentu memerlukan penghapusan data yang mewakili fakta yang sama sekali berbeda. Hubungan "Fakultas dan Mata Kuliahnya" yang dijelaskan dalam contoh sebelumnya mengalami jenis anomali ini, karena jika seorang anggota fakultas untuk sementara berhenti ditugaskan ke mata kuliah apa pun, catatan terakhir yang menampilkan anggota fakultas tersebut harus dihapus, secara efektif juga menghapus anggota fakultas, kecuali bidang Kode Kursus disetel ke nol.
+Minimalkan desain ulang saat memperluas struktur database 
+Basis data yang sepenuhnya dinormalisasi memungkinkan strukturnya diperluas untuk mengakomodasi jenis data baru tanpa terlalu banyak mengubah struktur yang ada. Akibatnya, aplikasi yang berinteraksi dengan database tidak terlalu terpengaruh.
+
+Hubungan yang dinormalisasi, dan hubungan antara satu hubungan yang dinormalisasi dan yang lain, mencerminkan konsep dunia nyata dan keterkaitannya.
+
+Bentuk normal 
+Codd memperkenalkan konsep normalisasi dan apa yang sekarang dikenal sebagai bentuk normal pertama (1NF) pada tahun 1970. [4] Codd melanjutkan untuk mendefinisikan bentuk normal kedua (2NF) dan bentuk normal ketiga (3NF) pada tahun 1971, [5] dan Codd dan Raymond F. Boyce mendefinisikan bentuk normal Boyce–Codd (BCNF) pada tahun 1974. [6]
+
+Secara informal, relasi basis data relasional sering digambarkan sebagai "dinormalisasi" jika memenuhi bentuk normal ketiga. [7] Sebagian besar relasi 3NF bebas dari anomali penyisipan, pembaruan, dan penghapusan.
+
+Bentuk normal (dari yang paling tidak dinormalisasi hingga yang paling dinormalisasi) adalah:
+
+UNF: Bentuk yang tidak dinormalisasi
+1NF: Bentuk normal pertama
+2NF: Bentuk normal kedua
+3NF: Bentuk normal ketiga
+EKNF: Bentuk normal kunci dasar
+BCNF: Bentuk normal Boyce–Codd
+4NF: Bentuk normal keempat
+ETNF: Bentuk normal tupel esensial
+5NF: Bentuk normal kelima
+DKNF: Bentuk normal kunci domain
+6NF: Bentuk normal keenam
+UNF
+(1970)	1NF
+(1970)	2NF
+(1971)	3NF
+(1971)	EKNF
+(1982)	BCNF
+(1974)	4NF
+(1977)	ETNF
+(2012)	5NF
+(1979)	DKNF
+(1981)	6NF
+(2003)
+Kunci utama (tidak ada tupel duplikat ) [4]	Mungkin	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya
+Kolom atom (sel tidak dapat memiliki tabel sebagai nilai) [5]	Tidak	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya
+Setiap ketergantungan fungsional non-trivial tidak dimulai dengan subset yang tepat dari kunci kandidat atau diakhiri dengan atribut prima (tidak ada ketergantungan fungsional parsial atribut non-prima pada kunci kandidat) [5]	Tidak	Tidak	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya
+Setiap ketergantungan fungsional non-trivial baik dimulai dengan superkey atau diakhiri dengan atribut prima (tidak ada ketergantungan fungsional transitif atribut non-prima pada kunci kandidat) [5]	Tidak	Tidak	Tidak	Ya	Ya	Ya	Ya	Ya	Ya	Ya	Ya
+Setiap ketergantungan fungsional non-sepele baik dimulai dengan superkey atau diakhiri dengan atribut prima dasar	Tidak	Tidak	Tidak	Tidak	Ya	Ya	Ya	Ya	Ya	Ya	—
+Setiap ketergantungan fungsional non-sepele dimulai dengan superkey	Tidak	Tidak	Tidak	Tidak	Tidak	Ya	Ya	Ya	Ya	Ya	—
+Setiap ketergantungan multinilai non-sepele dimulai dengan superkey	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Ya	Ya	Ya	Ya	—
+Setiap ketergantungan bergabung memiliki komponen superkey [8]	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Ya	Ya	Ya	—
+Setiap ketergantungan bergabung hanya memiliki komponen superkey	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Ya	Ya	—
+Setiap kendala adalah konsekuensi dari kendala domain dan kendala utama	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Ya	Tidak
+Setiap ketergantungan bergabung adalah sepele	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Tidak	Ya
+Contoh normalisasi langkah demi langkah 
+Normalisasi adalah teknik desain database, yang digunakan untuk mendesain tabel database relasional hingga ke bentuk normal yang lebih tinggi. [9] Prosesnya progresif, dan level normalisasi database yang lebih tinggi tidak dapat dicapai kecuali level sebelumnya telah dipenuhi. [10]
+
+Itu berarti bahwa, memiliki data dalam bentuk yang tidak dinormalisasi (paling tidak dinormalisasi) dan bertujuan untuk mencapai tingkat normalisasi tertinggi, langkah pertama adalah memastikan kepatuhan terhadap bentuk normal pertama , langkah kedua adalah memastikan bentuk normal kedua terpenuhi, dan seterusnya sesuai urutan tersebut di atas, sampai data memenuhi bentuk normal keenam .
+
+Namun, perlu dicatat bahwa bentuk normal di luar 4NF sebagian besar merupakan kepentingan akademis, karena masalah yang ada untuk dipecahkan jarang muncul dalam praktik. [11]
+
+Data dalam contoh berikut ini sengaja dirancang untuk bertentangan dengan sebagian besar bentuk normal. Dalam kehidupan nyata, sangat mungkin untuk melewatkan beberapa langkah normalisasi karena tabel tidak berisi apa pun yang bertentangan dengan bentuk normal yang diberikan. Biasanya juga terjadi bahwa memperbaiki pelanggaran satu bentuk normal juga memperbaiki pelanggaran bentuk normal yang lebih tinggi dalam proses. Juga satu tabel telah dipilih untuk normalisasi pada setiap langkah, yang berarti bahwa pada akhir proses contoh ini, mungkin masih ada beberapa tabel yang tidak memenuhi bentuk normal tertinggi.
+
+Data awal 
+Biarkan tabel database ada dengan struktur berikut: [10]
+
+Judul	Pengarang	Kebangsaan Penulis	Format	Harga	Subjek	halaman	Ketebalan	Penerbit	Negara Penerbit	Jenis Publikasi	ID genre	Nama Genre
+Memulai Desain dan Optimasi Database MySQL	Chad Russell	Amerika	Sampul keras	49.99	
+MySQL
+Basis data
+Rancangan
+520	Tebal	tekan	Amerika Serikat	buku elektronik	1	tutorial
+Untuk contoh ini, diasumsikan bahwa setiap buku hanya memiliki satu penulis.
+
+Sebagai prasyarat untuk menyesuaikan diri dengan model relasional, sebuah tabel harus memiliki kunci utama , yang secara unik mengidentifikasi sebuah baris. Dua buku dapat memiliki judul yang sama, tetapi ISBN secara unik mengidentifikasi sebuah buku, sehingga dapat digunakan sebagai kunci utama:
+
+ISBN	Judul	Pengarang	Kebangsaan Penulis	Format	Harga	Subjek	halaman	Ketebalan	Penerbit	Negara Penerbit	Jenis Publikasi	ID genre	Nama Genre
+1590593324	Memulai Desain dan Optimasi Database MySQL	Chad Russell	Amerika	Sampul keras	49.99	
+MySQL
+Basis data
+Rancangan
+520	Tebal	tekan	Amerika Serikat	buku elektronik	1	tutorial
+Memuaskan 1NF 
+Untuk memenuhi Bentuk normal pertama , setiap kolom tabel harus memiliki satu nilai. Kolom yang berisi kumpulan nilai atau catatan bersarang tidak diperbolehkan.
+
+Pada tabel awal, Subjek berisi sekumpulan nilai subjek, artinya tidak sesuai.
+
+Untuk memecahkan masalah, subjek diekstraksi ke dalam tabel Subjek terpisah: [10]
+
+Buku
+ISBN	Judul	Format	Pengarang	Kebangsaan Penulis	Harga	halaman	Ketebalan	Penerbit	Negara penerbit	ID genre	Nama Genre
+1590593324	Memulai Desain dan Optimasi Database MySQL	Sampul keras	Chad Russell	Amerika	49.99	520	Tebal	tekan	Amerika Serikat	1	tutorial
+Subjek
+ISBN	Nama subjek
+1590593324	MySQL
+1590593324	Basis data
+1590593324	Rancangan
+Kolom kunci asing ditambahkan ke tabel Subjek , yang mengacu pada kunci utama baris tempat subjek diekstraksi. Oleh karena itu, informasi yang sama diwakili tetapi tanpa menggunakan domain non-sederhana.
+
+Alih-alih satu tabel dalam bentuk yang tidak dinormalisasi , sekarang ada dua tabel yang sesuai dengan 1NF.
+
+Memuaskan 2NF 
+Jika sebuah tabel memiliki satu kolom primary key, maka secara otomatis memenuhi 2NF, tetapi jika tabel memiliki multi-kolom atau kunci komposit maka mungkin tidak memenuhi 2NF.
+Tabel Buku di bawah ini memiliki kunci gabungan {Title, Format} (ditunjukkan dengan garis bawah), sehingga mungkin tidak memenuhi 2NF. Pada titik ini dalam desain kami kunci tersebut tidak diselesaikan sebagai kunci utama , sehingga disebut kunci kandidat . Perhatikan tabel berikut:
+
+Buku
+Judul	Format	Pengarang	Kebangsaan Penulis	Harga	halaman	Ketebalan	ID genre	Nama Genre	ID Penerbit
+Memulai Desain dan Optimasi Database MySQL	Sampul keras	Chad Russell	Amerika	49.99	520	Tebal	1	tutorial	1
+Memulai Desain dan Optimasi Database MySQL	buku elektronik	Chad Russell	Amerika	22.34	520	Tebal	1	tutorial	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	buku elektronik	EFCodd	Inggris	13.88	538	Tebal	2	Ilmu pengetahuan populer	2
+Model Relasional untuk Manajemen Basis Data: Versi 2	Paperback	EFCodd	Inggris	39.99	538	Tebal	2	Ilmu pengetahuan populer	2
+Semua atribut yang bukan merupakan bagian dari kunci kandidat tergantung pada Judul , tetapi hanya Harga juga tergantung pada Format . Untuk menyesuaikan dengan 2NF dan menghilangkan duplikasi, setiap atribut bukan kunci kandidat harus bergantung pada kunci kandidat secara keseluruhan, bukan hanya sebagian saja.
+
+Untuk menormalkan tabel ini, buat {Title} menjadi kunci kandidat (sederhana) (kunci utama) sehingga setiap atribut bukan kunci kandidat bergantung pada seluruh kunci kandidat, dan hapus Harga ke dalam tabel terpisah sehingga ketergantungannya pada Format dapat diawetkan:
+
+Buku
+Judul	Pengarang	Kebangsaan Penulis	halaman	Ketebalan	ID genre	Nama Genre	ID Penerbit
+Memulai Desain dan Optimasi Database MySQL	Chad Russell	Amerika	520	Tebal	1	tutorial	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	EFCodd	Inggris	538	Tebal	2	Ilmu pengetahuan populer	2
+Format - Harga
+Judul	Format	Harga
+Memulai Desain dan Optimasi Database MySQL	Sampul keras	49.99
+Memulai Desain dan Optimasi Database MySQL	buku elektronik	22.34
+Model Relasional untuk Manajemen Basis Data: Versi 2	buku elektronik	13.88
+Model Relasional untuk Manajemen Basis Data: Versi 2	Paperback	39.99
+Sekarang, tabel Book sesuai dengan 2NF .
+
+3NF yang Memuaskan 
+Tabel Buku masih memiliki ketergantungan fungsional transitif ({Author Nationality} bergantung pada {Author}, yang bergantung pada {Title}). Pelanggaran serupa terjadi untuk genre ({Genre Name} bergantung pada {Genre ID}, yang bergantung pada {Title}). Oleh karena itu, tabel Buku tidak dalam 3NF. Untuk membuatnya dalam 3NF, mari gunakan struktur tabel berikut, sehingga menghilangkan ketergantungan fungsional transitif dengan menempatkan {Author Nationality} dan {Genre Name} di tabel masing-masing:
+
+Buku
+Judul	Pengarang	halaman	Ketebalan	ID genre	ID Penerbit
+Memulai Desain dan Optimasi Database MySQL	Chad Russell	520	Tebal	1	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	EFCodd	538	Tebal	2	2
+Format - Harga
+Judul	Format	Harga
+Memulai Desain dan Optimasi Database MySQL	Sampul keras	49.99
+Memulai Desain dan Optimasi Database MySQL	buku elektronik	22.34
+Model Relasional untuk Manajemen Basis Data: Versi 2	buku elektronik	13.88
+Model Relasional untuk Manajemen Basis Data: Versi 2	Paperback	39.99
+Pengarang
+Pengarang	Kebangsaan Penulis
+Chad Russell	Amerika
+EFCodd	Inggris
+Genre
+ID genre	Nama Genre
+1	tutorial
+2	Ilmu pengetahuan populer
+EKNF yang Memuaskan 
+Artikel utama: Bentuk normal kunci dasar
+Bentuk normal kunci dasar (EKNF) berada di antara 3NF dan BCNF dan tidak banyak dibahas dalam literatur. Ini dimaksudkan "untuk menangkap kualitas yang menonjol dari 3NF dan BCNF" sambil menghindari masalah keduanya (yaitu, bahwa 3NF "terlalu pemaaf" dan BCNF "rentan terhadap kompleksitas komputasi"). Karena jarang disebutkan dalam literatur, itu tidak termasuk dalam contoh ini. [12]
+
+Memuaskan 4NF 
+Asumsikan database dimiliki oleh waralaba pengecer buku yang memiliki beberapa pewaralaba yang memiliki toko di lokasi yang berbeda. Dan karena itu pengecer memutuskan untuk menambahkan tabel yang berisi data tentang ketersediaan buku di lokasi yang berbeda:
+
+Penerima Waralaba - Pesan Lokasi
+ID Penerima Waralaba	Judul	Lokasi
+1	Memulai Desain dan Optimasi Database MySQL	California
+1	Memulai Desain dan Optimasi Database MySQL	Florida
+1	Memulai Desain dan Optimasi Database MySQL	Texas
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	California
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	Florida
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	Texas
+2	Memulai Desain dan Optimasi Database MySQL	California
+2	Memulai Desain dan Optimasi Database MySQL	Florida
+2	Memulai Desain dan Optimasi Database MySQL	Texas
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	California
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	Florida
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	Texas
+3	Memulai Desain dan Optimasi Database MySQL	Texas
+Karena struktur tabel ini terdiri dari kunci utama majemuk , itu tidak mengandung atribut non-kunci dan sudah ada di BCNF (dan karenanya juga memenuhi semua bentuk normal sebelumnya ). Namun, dengan asumsi bahwa semua buku yang tersedia ditawarkan di setiap area, Judul tidak terikat dengan jelas ke Lokasi tertentu dan oleh karena itu tabel tidak memenuhi 4NF .
+
+Artinya, untuk memenuhi bentuk normal keempat , tabel ini juga perlu didekomposisi:
+
+Penerima Waralaba - Pesan
+ID Penerima Waralaba	Judul
+1	Memulai Desain dan Optimasi Database MySQL
+1	Model Relasional untuk Manajemen Basis Data: Versi 2
+2	Memulai Desain dan Optimasi Database MySQL
+2	Model Relasional untuk Manajemen Basis Data: Versi 2
+3	Memulai Desain dan Optimasi Database MySQL
+Penerima Waralaba - Lokasi
+ID Penerima Waralaba	Lokasi
+1	California
+1	Florida
+1	Texas
+2	California
+2	Florida
+2	Texas
+3	Texas
+Sekarang, setiap record diidentifikasi dengan jelas oleh superkey , oleh karena itu 4NF terpenuhi. [13]
+
+Memuaskan ETNF 
+Misalkan franchisee juga dapat memesan buku dari pemasok yang berbeda. Biarkan relasi juga tunduk pada kendala berikut:
+
+Jika pemasok tertentu memasok judul tertentu
+dan judul diberikan kepada penerima waralaba
+dan penerima waralaba dipasok oleh pemasok,
+kemudian pemasok memberikan hak tersebut kepada penerima waralaba . [14]
+Pemasok - Buku - Penerima Waralaba
+ID pemasok	Judul	ID Penerima Waralaba
+1	Memulai Desain dan Optimasi Database MySQL	1
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	2
+3	Belajar SQL	3
+Tabel ini dalam 4NF , tetapi ID Pemasok sama dengan gabungan proyeksinya: {{Supplier ID, Book}, {Book, Franchisee ID}, {Franchisee ID, Supplier ID}}. Tidak ada komponen dari join dependency yang merupakan superkey (satu-satunya superkey yang menjadi heading keseluruhan), sehingga tabel tidak memenuhi ETNF dan dapat didekomposisi lebih lanjut: [14]
+
+Pemasok - Buku
+ID pemasok	Judul
+1	Memulai Desain dan Optimasi Database MySQL
+2	Model Relasional untuk Manajemen Basis Data: Versi 2
+3	Belajar SQL
+Buku - Penerima Waralaba
+Judul	ID Penerima Waralaba
+Memulai Desain dan Optimasi Database MySQL	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	2
+Belajar SQL	3
+Penerima Waralaba - Pemasok
+ID pemasok	ID Penerima Waralaba
+1	1
+2	2
+3	3
+Dekomposisi menghasilkan kepatuhan ETNF.
+
+Memuaskan 5NF 
+Untuk menemukan tabel yang tidak memenuhi 5NF , biasanya perlu untuk memeriksa data secara menyeluruh. Misalkan tabel dari contoh 4NF dengan sedikit modifikasi pada data dan mari kita periksa apakah memenuhi 5NF :
+
+Penerima Waralaba - Pesan Lokasi
+ID Penerima Waralaba	Judul	Lokasi
+1	Memulai Desain dan Optimasi Database MySQL	California
+1	Belajar SQL	California
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	Texas
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	California
+Mengurai tabel ini menurunkan redundansi, menghasilkan dua tabel berikut:
+
+Penerima Waralaba - Pesan
+ID Penerima Waralaba	Judul
+1	Memulai Desain dan Optimasi Database MySQL
+1	Belajar SQL
+1	Model Relasional untuk Manajemen Basis Data: Versi 2
+2	Model Relasional untuk Manajemen Basis Data: Versi 2
+Penerima Waralaba - Lokasi
+ID Penerima Waralaba	Lokasi
+1	California
+1	Texas
+2	California
+Kueri yang bergabung dengan tabel ini akan mengembalikan data berikut:
+
+Penerima Waralaba - Buku - Lokasi BERGABUNG
+ID Penerima Waralaba	Judul	Lokasi
+1	Memulai Desain dan Optimasi Database MySQL	California
+1	Belajar SQL	California
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	California
+1	Model Relasional untuk Manajemen Basis Data: Versi 2	Texas
+1	Belajar SQL	Texas
+1	Memulai Desain dan Optimasi Database MySQL	Texas
+2	Model Relasional untuk Manajemen Basis Data: Versi 2	California
+JOIN mengembalikan tiga baris lebih banyak dari yang seharusnya; menambahkan tabel lain untuk memperjelas hasil relasi dalam tiga tabel terpisah:
+Penerima Waralaba - Pesan
+ID Penerima Waralaba	Judul
+1	Memulai Desain dan Optimasi Database MySQL
+1	Belajar SQL
+1	Model Relasional untuk Manajemen Basis Data: Versi 2
+2	Model Relasional untuk Manajemen Basis Data: Versi 2
+Penerima Waralaba - Lokasi
+ID Penerima Waralaba	Lokasi
+1	California
+1	Texas
+2	California
+Lokasi - Pesan
+Lokasi	Judul
+California	Memulai Desain dan Optimasi Database MySQL
+California	Belajar SQL
+California	Model Relasional untuk Manajemen Basis Data: Versi 2
+Texas	Model Relasional untuk Manajemen Basis Data: Versi 2
+Apa yang akan JOIN kembalikan sekarang? Sebenarnya tidak mungkin untuk menggabungkan ketiga tabel ini. Itu berarti tidak mungkin untuk menguraikan Penerima Waralaba - Lokasi Buku tanpa kehilangan data, oleh karena itu tabel sudah memenuhi 5NF . [13]
+
+CJ Date berpendapat bahwa hanya database di 5NF yang benar-benar "dinormalisasi". [15]
+
+Memuaskan DKNF 
+Mari kita lihat tabel Book dari contoh sebelumnya dan lihat apakah memenuhi bentuk normal Domain-key :
+
+Buku
+Judul	halaman	Ketebalan	ID genre	ID Penerbit
+Memulai Desain dan Optimasi Database MySQL	520	Tebal	1	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	538	Tebal	2	2
+Belajar SQL	338	Langsing	1	3
+Buku Masak SQL	636	Tebal	1	3
+Logikanya, Ketebalan ditentukan oleh jumlah halaman. Itu berarti itu tergantung pada Halaman yang bukan kunci. Mari kita beri contoh konvensi yang mengatakan buku hingga 350 halaman dianggap "ramping" dan buku lebih dari 350 halaman dianggap "tebal".
+
+Konvensi ini secara teknis merupakan kendala tetapi bukan merupakan kendala domain atau kendala kunci; oleh karena itu kami tidak dapat mengandalkan batasan domain dan batasan utama untuk menjaga integritas data.
+
+Dengan kata lain — tidak ada yang menghalangi kami untuk menempatkan, misalnya, "Tebal" untuk buku dengan hanya 50 halaman — dan ini membuat tabel melanggar DKNF .
+
+Untuk mengatasi ini, tabel yang berisi enumerasi yang mendefinisikan Ketebalan dibuat, dan kolom tersebut dihapus dari tabel asli:
+
+Ketebalan Enum
+Ketebalan	halaman minimal	halaman maks
+Langsing	1	350
+Tebal	351	999.999.999.999
+Buku - Halaman - Genre - Penerbit
+Judul	halaman	ID genre	ID Penerbit
+Memulai Desain dan Optimasi Database MySQL	520	1	1
+Model Relasional untuk Manajemen Basis Data: Versi 2	538	2	2
+Belajar SQL	338	1	3
+Buku Masak SQL	636	1	3
+Dengan begitu, pelanggaran integritas domain telah dihilangkan, dan tabelnya ada di DKNF .
+
+Memuaskan 6NF 
+Definisi sederhana dan intuitif dari bentuk normal keenam adalah bahwa "sebuah tabel berada dalam 6NF ketika baris berisi Kunci Utama, dan paling banyak satu atribut lainnya" . [16]
+
+Itu berarti, misalnya, tabel Publisher dirancang saat membuat 1NF
+
+Penerbit
+Publisher_ID	Nama	Negara
+1	tekan	Amerika Serikat
+perlu diuraikan lebih lanjut menjadi dua tabel:
+
+Penerbit
+Publisher_ID	Nama
+1	tekan
+Negara penerbit
+Publisher_ID	Negara
+1	Amerika Serikat
+Kelemahan yang jelas dari 6NF adalah proliferasi tabel yang diperlukan untuk mewakili informasi pada satu entitas. Jika sebuah tabel dalam 5NF memiliki satu kolom kunci utama dan N atribut, mewakili informasi yang sama dalam 6NF akan membutuhkan N tabel; pembaruan multi-bidang ke catatan konseptual tunggal akan memerlukan pembaruan ke beberapa tabel; dan penyisipan dan penghapusan juga akan membutuhkan operasi di beberapa tabel. Untuk alasan ini, dalam database yang dimaksudkan untuk melayani kebutuhan Pemrosesan Transaksi Online , 6NF tidak boleh digunakan.
+
+Namun, di gudang data , yang tidak mengizinkan pembaruan interaktif dan yang dikhususkan untuk kueri cepat pada volume data yang besar, DBMS tertentu menggunakan representasi 6NF internal — yang dikenal sebagai penyimpanan data kolom . Dalam situasi di mana jumlah nilai unik kolom jauh lebih sedikit daripada jumlah baris dalam tabel, penyimpanan berorientasi kolom memungkinkan penghematan ruang yang signifikan melalui kompresi data. Penyimpanan kolom juga memungkinkan eksekusi cepat kueri rentang (mis., tampilkan semua rekaman di mana kolom tertentu berada di antara X dan Y, atau kurang dari X.)
+
+Namun, dalam semua kasus ini, perancang database tidak harus melakukan normalisasi 6NF secara manual dengan membuat tabel terpisah. Beberapa DBMS yang dikhususkan untuk pergudangan, seperti Sybase IQ , menggunakan penyimpanan kolumnar secara default, tetapi perancang masih hanya melihat satu tabel multi-kolom. DBMS lain, seperti Microsoft SQL Server 2012 dan yang lebih baru, memungkinkan Anda menentukan "indeks toko kolom" untuk tabel tertentu. [17]
+
+Lihat juga 
+Denormalisasi
+Pemfaktoran ulang basis data
+Dekomposisi gabung lossless
+Catatan dan referensi 
+ "Pengadopsian model data relasional ... memungkinkan pengembangan subbahasa data universal berdasarkan kalkulus predikat yang diterapkan. Kalkulus predikat orde pertama sudah cukup jika kumpulan relasi dalam bentuk normal pertama. bahasa akan memberikan tolok ukur kekuatan linguistik untuk semua bahasa data yang diusulkan lainnya, dan itu sendiri akan menjadi kandidat kuat untuk embedding (dengan modifikasi sintaksis yang sesuai) dalam berbagai bahasa host (pemrograman, berorientasi perintah atau masalah)." Codd, "A Relational Model of Data for Large Shared Data Banks" Diarsipkan 12 Juni 2007, di Wayback Machine , p. 381
+ Codd, EF Bab 23, "Kelemahan Serius dalam SQL", dalam Model Relasional untuk Manajemen Basis Data: Versi 2 . Addison-Wesley (1990), hlm. 371–389
+ Codd, EF "Normalisasi Lebih Lanjut dari Model Relasional Basis Data", hal. 34
+ Codd, EF (Juni 1970). "Model Data Relasional untuk Bank Data Bersama Besar" . Komunikasi ACM . 13 (6): 377–387. doi : 10.1145/362384.362685 . S2CID  207549016 . Diarsipkan dari versi asli pada 12 Juni 2007 . Diakses pada 25 Agustus 2005 .
+ Codd, EF "Normalisasi Lebih Lanjut Model Relasional Basis Data". (Dipresentasikan di Courant Computer Science Symposia Series 6, "Data Base Systems", New York City, 24-25 Mei 1971.) IBM Research Report RJ909 (31 Agustus 1971). Diterbitkan ulang dalam Randall J. Rustin (ed.), Sistem Basis Data: Courant Computer Science Symposia Series 6 . Prentice-Hall, 1972.
+ Codd, EF "Investigasi Terbaru ke Sistem Basis Data Relasional". Laporan Penelitian IBM RJ1385 (23 April 1974). Diterbitkan ulang di Proc. Kongres 1974 (Stockholm, Swedia, 1974), NY: Belanda Utara (1974).
+ Tanggal, CJ (1999). Pengantar Sistem Basis Data . Addison-Wesley. p. 290.
+ Darwen, Hugh; Tanggal, CJ; Fagin, Ronald (2012). "Bentuk Normal untuk Mencegah Tupel Berlebihan dalam Basis Data Relasional" (PDF) . Prosiding Konferensi Internasional ke-15 tentang Teori Basis Data . Konferensi Bersama EDBT/ICDT 2012 . Seri Prosiding Konferensi Internasional ACM. Asosiasi Mesin Komputasi . p. 114. doi : 10.1145/2274576.2274589 . ISBN  978-1-4503-0791-8. OCLC  802369023 . Diakses pada 22 Mei 2018 .
+ Kumar, Kunal; Azad, SK (Oktober 2017). Pola desain normalisasi database . 2017 4th IEEE Uttar Pradesh Bagian Konferensi Internasional tentang Listrik, Komputer dan Elektronik (UPCON) . IEEE. doi : 10.1109/upcon.2017.8251067 . ISBN 9781538630044. S2CID  24491594 .
+ "normalisasi database di MySQL: Empat langkah cepat dan mudah" . ComputerWeekly.com . Diarsipkan dari versi asli pada 30 Agustus 2017 . Diakses pada 23 Maret 2021 .
+"Normalisasi Basis Data: Bentuk Normal ke-5 dan Selanjutnya" . Basis Pengetahuan MariaDB . Diakses pada 23 Januari 2019 .
+"Bentuk Normal Tambahan - Desain Basis Data dan Teori Relasional - halaman 151" . apa-kapan-bagaimana.com . Diakses pada 22 Januari 2019 .
+ "Normalizace databáze" , Wikipedie (dalam bahasa Ceko), 7 November 2018 , diambil 22 Januari 2019
+ Tanggal, CJ (21 Desember 2015). Kamus Basis Data Relasional Baru: Istilah, Konsep, dan Contoh . "O'Reilly Media, Inc.". p. 138. ISBN 9781491951699.
+ Tanggal, CJ (21 Desember 2015). Kamus Basis Data Relasional Baru: Istilah, Konsep, dan Contoh . "O'Reilly Media, Inc.". p. 163. ISBN 9781491951699.
+"normalisasi - Ingin Memahami 6NF dengan Contoh" . Luapan Tumpukan . Diakses pada 23 Januari 2019 .
+ Microsoft Corporation. Indeks Toko Kolom: Ikhtisar. https://docs.microsoft.com/en-us/sql/relational-databases/indexes/columnstore-indexes-overview . Diakses pada 23 Maret 2020.
+Bacaan lebih lanjut 
+Date, CJ (1999), Pengantar Sistem Database (edisi ke-8). Addison-Wesley Longman. ISBN 0-321-19784-4 . 
+Kent, W. (1983) Panduan Sederhana untuk Lima Bentuk Normal dalam Teori Basis Data Relasional , Komunikasi ACM, vol. 26, hlm. 120–125
+H.-J. Schek, P. Struktur Data Pistor untuk Manajemen Basis Data Terpadu dan Sistem Pengambilan Informasi
+Tautan eksternal 
+Kent, William (Februari 1983). "Panduan Sederhana untuk Lima Bentuk Normal dalam Teori Basis Data Relasional" . Komunikasi ACM . 26 (2): 120–125. doi : 10.1145/358024.358054 . S2CID  9195704 .
+Dasar- dasar Normalisasi Basis Data oleh Mike Chapple (Tentang.com)
+Pengenalan Normalisasi Basis Data , Bagian 2
+Pengantar Normalisasi Basis Data oleh Mike Hillyer.
+Sebuah tutorial tentang 3 bentuk normal pertama oleh Fred Coulson
+Deskripsi dasar-dasar normalisasi database oleh Microsoft
+Normalisasi di DBMS oleh Chaitanya (beginnersbook.com)
+Panduan Langkah-demi-Langkah untuk Normalisasi Database
+ETNF – Bentuk normal tupel esensial
